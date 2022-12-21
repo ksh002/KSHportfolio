@@ -29,92 +29,8 @@ body {
     margin:0 auto;
 }
 
-header {
-    width: 100%;
-    height: 80px;
-    background-color: #f4ede7;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 10;
-}
+#about{}
 
-header .header_wrap {
-    width: 100%;
-    max-width: 1610px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo {
-    font-size: 0;
-}
-
-header .logo a {
-    font-size: 0;
-}
-
-header .logo img {
-    width: 100%;
-    height: 100%;
-}
-
-header .gnb {
-    display: flex;
-    
-}
-
-header .gnb li {
-    width: 180px;
-    text-align: center;
-    margin-left: 15px;
-}
-
-header .gnb li div {
-    width: 100%;
-    height: 5px;
-    background-color: #bfa58e;
-}
-
-header .gnb li.about div {
-    background-color: #544b43;
-}
-
-header .gnb li span {
-    font-size: 20px;
-    display: block;
-    padding-top: 15px;
-    color: #bfa58e;
-    transition:0.25s;
-}
-
-header .gnb li.about span {
-    font-weight: bold;
-    color: #544b43;
-}
-header .gnb li:nth-child(n+2):nth-child(-n+4):hover div{
-    animation:1s hed_ani linear;
-    background-color:#544b43;
-}
-@keyframes hed_ani{ /* gnb 막대 애니메이션 */
-    0%{
-        width:0%;
-    }
-    50%{
-        width:50%;
-    }
-    100%{
-        width:100%;
-    }
-}
-header .gnb li:hover span{
-    font-weight: bold;
-    color: #544b43;
-}
-/* header end */
 
 
 #aboutme {
@@ -428,13 +344,20 @@ header .gnb li:hover span{
 }
 #whoishe .skill_right{
     width:65%;
-    padding:0 40px;
+    
+    position:relative;
 }
-#whoishe .skill_right .rightHtml{
-    /* height:100%; */
+
+#whoishe .skill_right .rightBox{
+    opacity:0;
+    padding:0 40px;
+    position:absolute;
+    top:0;
+}
+#whoishe .skill_right .active{
+    opacity:1;
     margin-top:60px;
-    display:flex;
-    flex-direction: column;
+    transition: all 0.5s ease-out;
 }
 
 #whoishe .skill_right .skillImg{
