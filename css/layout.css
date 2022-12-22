@@ -358,13 +358,17 @@
 
 #about .whoishe .whoishe_right .skill_right .rightBox{
     opacity:0;
+    width:100%;
     padding:0 40px;
     position:absolute;
-    top:0;
+    top:50%;
+    transform:translateY(-50%);
+    left:30%;
 }
 #about .whoishe .whoishe_right .skill_right div.active{
     opacity:1;
-    margin-top:60px;
+    position:absolute;
+    left:0;
     transition: all 0.5s ease-out;
 }
 
@@ -397,19 +401,102 @@
 /* whoishe end */
 /* about end */
 
+#web .renewal{
+    display:flex;
+}
+#web .renewal .rnLeft_bg{
+    width:100%;
+    max-width:626px;
+    height:100vh;
+    background-color:#bfa58e;
+    padding-top:80px;
+    position:sticky;
+    top:0;
+}
 
+#web .renewal .rnLeft_container{
+    width:100%;
+    height:100%;
+    padding:80px 0 80px 149px;
+}
+#web .renewal .rnLeft_box{
+    width:100%;
+    height:100%;
+    box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
+}
+#web .renewal .rnLeft_box h1{
+    font-size:40px;
+    color:#544b43;
+    text-align:center;
+    padding-top:124px;
+    margin-bottom:70px;
+}
+#web .renewal .rnLeft_box > div{
+    display:flex;
+    justify-content: space-around;
+}
+#web .renewal .rnLeft_box > div .ptImg_box{
+    padding-top:140px;
+}
+#web .renewal .rnLeft_box > div img{
+    width:250px;
+    height:131px;
+    transform:rotate(90deg);
+}
+#web .renewal .rnLeft_box > div ul{
+    padding-right:20px;
+}
+#web .renewal .rnLeft_box > div ul li{
+    font-size:35px;
+    color:#f4ede7;
+}
+#web .renewal .rnLeft_box > div ul li:nth-child(2){
+    padding:10px 0;
+}
+#web .renewal .rnLeft_box > div ul li.on{
+    font-weight:bold;
+    color:#544b43;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+#web .renewal .rnRight_box{
+    width:100%;
+    /* height:2000px; */
+    /* height:100%; */
+    padding-top:160px;
+    padding-bottom:80px;
+    padding-right:145px;
+}
+#web .renewal .rnRight_box > div{
+    width:100%;
+    height:100%;
+    margin-bottom:240px;
+    /* max-height:730px; */
+    /* background:blanchedalmond; */
+}
+#web .renewal .rnRight_box .renewal_1{
+    background-image: url(/img/lookpin_bg.jpg);
+    display:flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+#web .renewal .rnRight_box .renewal_1 > div{
+    width:100%;
+    max-width:322px;
+    height:100%;
+    max-height:318px;
+    background-color:rgba(255,255,255,0.5);
+    border-radius:15px;
+    margin-bottom:60px;
+}
+#web .renewal .rnRight_box .renewal_1 img{
+    width:457px;
+    height:384px;
+}
+#web .renewal .rnRight_box .renewal_1 h1{
+    font-size:70px;
+    color:#FFC700;
+    transform:rotate(90deg);
+}
 
 
 

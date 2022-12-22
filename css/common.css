@@ -50,17 +50,11 @@ header .gnb li {
     text-align: center;
     margin-left: 15px;
 }
-
 header .gnb li div {
     width: 100%;
     height: 5px;
     background-color: #bfa58e;
 }
-
-header .gnb li.about div {
-    background-color: #544b43;
-}
-
 header .gnb li span {
     font-size: 20px;
     display: block;
@@ -81,7 +75,7 @@ header .gnb li span::after{
 }
 header .gnb li span::after{
     width:0;
-    background: #544b43;
+    background-color:#544b43;
     transition:all 0.5s;
     left:50%;
     transform:translateX(-50%);
@@ -89,29 +83,13 @@ header .gnb li span::after{
 header .gnb li:hover span::after{
     width:100%;
 }
-
+header .gnb li.on span{
+    color:#544b43;
+    font-weight:bold;
+}
 header .gnb li.on span::after{
     width:100%;
-}
-
-header .gnb li.about span {
-    font-weight: bold;
-    color: #544b43;
-}
-header .gnb li:nth-child(n+2):nth-child(-n+4):hover div{
-    animation:1s hed_ani linear;
-    background-color:#544b43;
-}
-@keyframes hed_ani{ /* gnb 막대 애니메이션 */
-    0%{
-        width:0%;
-    }
-    50%{
-        width:50%;
-    }
-    100%{
-        width:100%;
-    }
+    background-color: #544b43;
 }
 header .gnb li:hover span{
     font-weight: bold;
@@ -174,6 +152,24 @@ footer .git span{
 }
 /* footer end */
 
+.slideUp{
+    position:fixed;
+    bottom:5%;
+    right:3%;
+    z-index:100;
+    display:none;
+    cursor: pointer;
+}
+.slideUp img{
+    width:50px;
+    height:50px;
+    opacity:0.8;
+    transition:all 0.25s;
+}
+.slideUp img:hover{
+    opacity:1;
+}
+/* slideUp end */
 
 
 
@@ -185,8 +181,6 @@ footer .git span{
 
 
 
-
-/*footer*/
 
 
 
