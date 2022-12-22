@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>강성훈 포트폴리오</title>
     <script src="https://kit.fontawesome.com/10d8588d9a.js" crossorigin="anonymous"></script> <!-- 폰트어썸 cdn -->
     <link rel="stylesheet" href="css/common.css"> <!-- css 연동 -->
     <link rel="stylesheet" href="css/layout.css"> <!-- css 연동 -->
 
-    <script defer src="js/jquery-1.12.4.js"></script> <!-- jquery오픈소스 연동 -->
+    <script defer src="js/jquery-3.6.3.min.js"></script> <!-- jquery 연동 -->
     <script defer src="js/script.js"></script> <!-- js 연동 -->
 
 </head>
@@ -47,36 +47,38 @@
 </header>
 <!-- header end -->
 
-<section id="aboutme">
+<section class="aboutme">
     <div class="right_bg"></div>
     <div class="container">
-        <div class="aboutme_left">
-            <div class="left_box">
-                <p class="text_ani">Designed By Sung Hoon</p>
-                <span>NICE TO MEET YOU</span>
-                <p>
-                    사소한일에도 최선을 다하고<br>
-                    언제나 좋은 결과를 이뤄내기 위해<br>
-                    끊임없이 노력하는 강성훈입니다.
-                </p>
-            </div>
-        </div>
-        <div class="aboutme_right">
-            <div class="right_box">
-                <img src="img/pattern.png" alt="패턴 이미지">
-                <div class="aboutBox">
-                    <h2>ABOUT <span>ME</span></h2>
+        <div class="aboutmeBox">
+            <div class="aboutme_left">
+                <div class="left_box">
+                    <p id="dynamic" class="text_ani active"></p>
+                    <span>NICE TO MEET YOU</span>
+                    <p>
+                        사소한일에도 최선을 다하고<br>
+                        언제나 좋은 결과를 이뤄내기 위해<br>
+                        끊임없이 노력하는 강성훈입니다.
+                    </p>
                 </div>
             </div>
-        </div>
-        <div class="aboutme_center">
-            <img src="" alt="">
+            <div class="aboutme_right">
+                <div class="right_box">
+                    <img src="img/pattern.png" alt="패턴 이미지">
+                    <div class="aboutBox">
+                        <h2>ABOUT <span>ME</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutme_center">
+                <img src="" alt="">
+            </div>
         </div>
     </div>
 </section>
 <!-- aboutme end -->
 
-<section id="whoishe">
+<section class="whoishe">
     <div class="left_bg"></div>
     <div class="container">
         <div class="whoisheBox">
@@ -197,6 +199,9 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="border">
+                            <div class="line"></div>
+                        </div>
                         <div class="skill_right">
                             <div class="rightBox active">
                                 <div class="skillImg">
@@ -260,6 +265,33 @@
 </section>
 <!-- whoishe end -->
 
-<footer></footer>
+<footer>
+    <h1>CONTACT</h1>
+    <div class="info">
+        <ul>
+            <li>
+                <a href="tel:010-2483-1751">
+                    <span>Phone &nbsp;&nbsp;<b>010-2483-1751</b></span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:uio6625@naver.com">
+                    <span>E-mail &nbsp;&nbsp;<b>uio6625@naver.com</b></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://open.kakao.com/o/slpaYVSe" target="_blank">
+                    <span>Kakao &nbsp;&nbsp;<b>https://open.kakao.com/o/slpaYvSe</b></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="git">
+        <a href="https://github.com/ksh002" target="_blank">
+            <img src="img/github.png" alt="깃허브 이미지">
+            <span>Git</span>
+        </a>
+    </div>
+</footer>
 </body>
 </html>

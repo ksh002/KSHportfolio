@@ -1,4 +1,10 @@
-
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); /*외부폰트*/
+* {margin: 0;padding: 0;box-sizing: border-box;}
+ul, li {list-style: none;}
+a {text-decoration: none;color: inherit;}
+img {border: none;}
+body {font-family: 'Noto Sans KR', sans-serif;}
 
 /*header*/
 header {
@@ -88,9 +94,6 @@ header .gnb li.on span::after{
     width:100%;
 }
 
-
-
-
 header .gnb li.about span {
     font-weight: bold;
     color: #544b43;
@@ -117,6 +120,59 @@ header .gnb li:hover span{
 /* header end */
 
 
+footer{
+    width:100%;
+    height:150px;
+    background-color:#f4ede7;
+    display:flex;
+    padding:0 650px;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+}
+footer h1{
+    font-size:25px;
+    font-weight:bold;
+    position:relative;
+    transform:rotate(-90deg);
+}
+footer h1::before{
+    content:"";
+    height:9px;
+    width:105%;
+    background:#FFC700;
+    position:absolute;
+    top:50%;
+    left:-3%;
+    transform:translateY(-50%);
+    z-index:-1;
+}
+
+footer .info li:nth-child(2){
+    padding:10px 0;
+}
+footer .info span{
+    font-size:16px;
+    font-weight:bold;
+}
+footer .info b{
+    font-size:16px;
+    font-weight:normal;
+}
+
+footer .git{
+    text-align:center;
+}
+footer .git img{
+    width:70px;
+    height:70px;
+}
+footer .git span{
+    display:block;
+    font-size:16px;
+    font-weight:bold;
+}
+/* footer end */
 
 
 

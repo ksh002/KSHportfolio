@@ -1,27 +1,4 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); /*외부폰트*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-ul, li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-img {
-    border: none;
-}
-
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-}
 
 .container{
     width:100%;
@@ -29,14 +6,10 @@ body {
     margin:0 auto;
 }
 
-#about{}
 
-
-
-#aboutme {
+#about .aboutme {
     width: 100%;
     height: 100vh;
-    /* max-height:1037px; */
     position: relative;
     display:flex;
     justify-content:center;
@@ -44,11 +17,22 @@ body {
     padding-top:80px;
     margin-bottom:60px;
 }
-#aboutme .container{
+
+#about .aboutme .container{
     height:100%;
     display:flex;
+    padding:80px 0;
 }
-#aboutme .right_bg{
+
+#about .aboutme .aboutmeBox{
+    width:100%;
+    height:100%;
+    box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
+    display:flex;
+    justify-content: space-between;
+}
+
+#about .aboutme .right_bg{
     width:50%;
     height:100vh;
     max-height:889px;
@@ -57,46 +41,57 @@ body {
     right:0px;
     z-index: -5;
 }
-#aboutme .aboutme_left {
+
+#about .aboutme .aboutme_left {
     width: 50%;
     height: 100%;
-    padding:80px 0;
 }
 
-#aboutme .left_box {
+#about .aboutme .left_box {
     width:100%;
     height:100%;
     text-align: center;
-    box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
 }
 
-#aboutme .left_box > p {
+#about .aboutme .left_box > p {
     font-size: 25px;
     color: #414141;
     line-height:45px;
 }
-
-#aboutme p.text_ani {
+#about .aboutme .left_box p.text_ani {
     font-size: 40px;
     font-weight: bold;
     color: #544b43;
+    position:relative;
+    display:inline-block;
+}
+#about .aboutme .left_box p.text_ani::after{
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    right:-10px;
+    width:3px;
+    height:100%;
+    background-color:#544b43;
+}
+#about .aboutme .left_box p.active::after{
+    display:none;
 }
 
-#aboutme .left_box span {
+#about .aboutme .left_box span {
     font-size: 35px;
     font-weight: bold;
     color: #544b43;
     position: relative;
     display: inline-block;
     margin: 9px 0 72px 0;
-
 }
-
-#aboutme .left_box span::before {
+#about .aboutme .left_box span::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -107,41 +102,38 @@ body {
     z-index: -1;
 }
 
-#aboutme .aboutme_right {
+#about .aboutme .aboutme_right {
     width: 50%;
     height: 100%;
-    padding:80px 0;
 }
 
-#aboutme .right_box {
+#about .aboutme .right_box {
     width: 100%;
     height: 100%;
-    box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
     position:relative;
 }
-#aboutme img{
+#about .aboutme .right_box img{
     position:absolute;
     top:10%;
     right:14%;
 }
-#aboutme .aboutBox {
+
+#about .aboutme .right_box .aboutBox {
     width: 375px;
     transform: rotate(90deg);
     position: absolute;
     bottom: 30%;
     right: 18%;
 }
-
-#aboutme .aboutBox h2 {
+#about .aboutme .right_box .aboutBox h2 {
     font-size: 70px;
     color: #544b43;
 }
-
-#aboutme .aboutBox span {
+#about .aboutme .right_box .aboutBox span {
     color: #FFC700;
 }
 
-#aboutme .aboutme_center {
+#about .aboutme .aboutme_center {
     width: 471px;
     height: 497px;
     position: absolute;
@@ -154,14 +146,14 @@ body {
 /* aboutme end */
 
 
-#whoishe{
+#about .whoishe{
     width: 100%;
     height: 100%;
     position:relative;
     margin-bottom:60px;
 }
 
-#whoishe .left_bg{
+#about .whoishe .left_bg{
     width:100%;
     max-width:759px;
     height:100vh;
@@ -172,12 +164,12 @@ body {
     z-index:-1
 }
 
-#whoishe .container{
+#about .whoishe .container{
     height:889px;
     padding:80px 0;
 }
 
-#whoishe .whoisheBox{
+#about .whoishe .whoisheBox{
     width:100%;
     height:100%;
     box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
@@ -185,12 +177,12 @@ body {
     justify-content: space-between;
 }
 
-#whoishe .whoishe_left{
+#about .whoishe .whoishe_left{
     width:38%;
     text-align:center;
     padding:100px 120px 0 0;
 }
-#whoishe .whoishe_left h4{
+#about .whoishe .whoishe_left h4{
     font-size:35px;
     font-weight:bold;
     color:#544b43;
@@ -198,27 +190,28 @@ body {
     display:inline-block;
     position:relative;
 }
-#whoishe .whoishe_left span{
+
+#about .whoishe .whoishe_left ul li{
+    padding-bottom:8px;
+}
+#about .whoishe .whoishe_left ul li span{
     font-size:20px;
     font-weight:bold;
     color:#414141;
 }
-#whoishe .whoishe_left b{
+#about .whoishe .whoishe_left ul li b{
     font-size:18px;
     font-weight:normal;
     color:#414141;
 }
-#whoishe .whoishe_left li{
-    padding-bottom:8px;
-}
 
-#whoishe .profile{
+#about .whoishe .whoishe_left .profile{
     margin-bottom:30px;
 }
-#whoishe .profile li:last-child{
+#about .whoishe .whoishe_left .profile li:last-child{
     padding-bottom:0;
 }
-#whoishe .profile h4::before {
+#about .whoishe .whoishe_left .profile h4::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -229,10 +222,10 @@ body {
     z-index: -1;
 }
 
-#whoishe .license li:last-child{
+#about .whoishe .whoishe_left .license li:last-child{
     padding-bottom:0;
 }
-#whoishe .license h4::before {
+#about .whoishe .whoishe_left .license h4::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -243,7 +236,7 @@ body {
     z-index: -1;
 }
 
-#whoishe .whoishe_right{
+#about .whoishe .whoishe_right{
     width:62%;
     display:flex;
     flex-direction: column;
@@ -252,63 +245,65 @@ body {
     padding-left:330px;
     text-align:center;
 }
-#whoishe .whoishe_right h3{
+
+#about .whoishe .whoishe_right h3{
     font-size:30px;
     font-weight:bold;
     color:#544b43;
     margin-bottom:25px;
 }
 
-#whoishe .process{
+#about .whoishe .whoishe_right .process{
     margin-bottom:75px;
 }
 
-#whoishe .processBox{
+#about .whoishe .whoishe_right .processBox{
     width:475px;
     height:93px;
     background-color:#f4ede7;
     border-radius: 90px;
 }
-#whoishe .processBox ul{
+
+#about .whoishe .whoishe_right .processBox ul{
     display:flex;
     justify-content: space-around;
 }
-#whoishe .processBox img{
+#about .whoishe .whoishe_right .processBox ul li{
+    text-align:center;
+    padding:10px 0 10px 29px;
+}
+#about .whoishe .whoishe_right .processBox ul li:last-child{
+    padding-right:29px;
+}
+#about .whoishe .whoishe_right .processBox ul li img{
     width:50px;
     height:50px;
 }
-#whoishe .processBox span{
+#about .whoishe .whoishe_right .processBox ul li span{
     font-size:14px;
     font-weight:normal;
     display:block;
 }
-#whoishe .processBox li{
-    text-align:center;
-    padding:10px 0 10px 29px;
-}
-#whoishe .processBox li:last-child{
-    padding-right:29px;
-}
 
-#whoishe .skillBox{
-    /* width:100%; */
+#about .whoishe .whoishe_right .skillBox{
     width:475px;
-    /* height:100%; */
     height:280px;
     border-radius: 45px;
     background-color:#f4ede7;
     display:flex;
 }
-#whoishe .skill_left{
+
+#about .whoishe .whoishe_right .skill_left{
     width:35%;
 }
-#whoishe .skill_left ul{
+
+#about .whoishe .whoishe_right .skill_left ul{
     height:100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
 }
-#whoishe .skill_left li{
+#about .whoishe .whoishe_right .skill_left ul li{
     display:flex;
     text-align:left;
     margin-left:30px;
@@ -317,68 +312,79 @@ body {
     opacity: 0.5;
     transition:0.25s;
 }
-#whoishe .skill_left li:hover{
+#about .whoishe .whoishe_right .skill_left ul li:hover{
     opacity:1;
 }
-#whoishe .skill_left li.active{
+#about .whoishe .whoishe_right .skill_left ul li.active{
     opacity: 1;
 }
-#whoishe .skill_left li:last-child{
+#about .whoishe .whoishe_right .skill_left ul li:last-child{
     margin-bottom:0;
 }
-#whoishe .skill_left i{
+#about .whoishe .whoishe_right .skill_left ul li .iBox{
+    width:30px;
+}
+#about .whoishe .whoishe_right .skill_left ul li i{
     color:#544b43;
     font-size:20px;
 }
-#whoishe .iBox{
-    width:30px;
-}
-#whoishe .cateBox{
+#about .whoishe .whoishe_right .skill_left ul li .cateBox{
     width:70px;
     margin-left:10px;
     text-align:left;
 }
-#whoishe .skill_left span{
-    /* margin-left:15px; */
+#about .whoishe .whoishe_right .skill_left ul li span{
     font-size:14px;
 }
-#whoishe .skill_right{
+
+#about .whoishe .whoishe_right .border{
+    width:1px;
+    height:200px;
+    background-color:rgba(84,75,67,0.5);
+    margin-top:45px;
+}
+#about .whoishe .whoishe_right .line{
+    width:5px;
+    height:20%;
+    background-color:#544b43;
+    margin-left:-2px;
+    transition:all 0.3s ease-in-out;
+}
+
+#about .whoishe .whoishe_right .skill_right{
     width:65%;
-    
     position:relative;
 }
 
-#whoishe .skill_right .rightBox{
+#about .whoishe .whoishe_right .skill_right .rightBox{
     opacity:0;
     padding:0 40px;
     position:absolute;
     top:0;
 }
-#whoishe .skill_right .active{
+#about .whoishe .whoishe_right .skill_right div.active{
     opacity:1;
     margin-top:60px;
     transition: all 0.5s ease-out;
 }
 
-#whoishe .skill_right .skillImg{
-}
-#whoishe .skill_right img{
+#about .whoishe .whoishe_right .skill_right .rightBox .skillImg img{
     width:60px;
     height:60px;
     margin:0 5px;
-
 }
-#whoishe .skill_right span{
+
+#about .whoishe .whoishe_right .skill_right .rightBox span{
     display:block;
     font-size:16px;
     font-weight:bold;
     margin-bottom:10px;
 }
-#whoishe .skill_right p{
+#about .whoishe .whoishe_right .skill_right .rightBox p{
     font-size:13px;
 }
 
-#whoishe .whoishe_center{
+#about .whoishe .whoishe_center{
     width: 464px;
     height: 567px;
     position: absolute;
@@ -389,12 +395,9 @@ body {
     border: 1px solid white;
 }
 /* whoishe end */
+/* about end */
 
-footer{
-    width:100%;
-    height:150px;
-    background-color:#f4ede7;
-}
+
 
 
 
