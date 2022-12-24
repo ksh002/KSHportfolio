@@ -10,72 +10,205 @@
     <link rel="stylesheet" href="css/layout.css"> <!-- css 연동 -->
 
     <script defer src="js/jquery-3.6.3.min.js"></script> <!-- jquery 연동 -->
-    <script defer src="js/script.js"></script> <!-- js 연동 -->
+    <script defer src="js/web.js"></script> <!-- js 연동 -->
+    <script defer src="js/common.js"></script> <!-- js 연동 -->
 
 </head>
 <body id="web">
-    <header>
-        <div class="header_wrap container">
-            <h1 class="logo">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="텍스트 로고">
+<header>
+    <div class="header_wrap container">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="텍스트 로고">
+            </a>
+        </h1>
+        <ul class="gnb">
+            <li>
+                <a href="/index.html">
+                    <span>About</span>
                 </a>
-            </h1>
-            <ul class="gnb">
-                <li>
-                    <a href="/index.html">
-                        <span>About</span>
-                    </a>
-                </li>
-                <li class="on">
-                    <a href="/web.html">
-                        <span>Web</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/design.html">
-                        <span>Design</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/story.html">
-                        <span>Story</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <!-- header end -->
+            </li>
+            <li class="on">
+                <a href="/web.html">
+                    <span>Web</span>
+                </a>
+            </li>
+            <li>
+                <a href="/design.html">
+                    <span>Design</span>
+                </a>
+            </li>
+            <li>
+                <a href="/story.html">
+                    <span>Story</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+<!-- header end -->
 
-    <section class="renewal">
-        <div class="rnLeft_bg">
-            <div class="rnLeft_container">
-                <div class="rnLeft_box">
-                    <h1>Web Site<br>Renewal</h1>
-                    <div>
-                        <div class="ptImg_box">
-                            <img src="img/pattern.png" alt="패턴 이미지">
-                        </div>
-                        <ul>
-                            <li class="on">Lookpin</li>
-                            <li>여기어때</li>
-                            <li>Hermes</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="rnRight_box">
-            <div class="renewal_1">
+<section class="renewal">
+    <div class="rnLeft_bg">
+        <div class="rnLeft_container">
+            <div class="rnLeft_box">
+                <h3>Web Site<br>Renewal</h3>
                 <div>
-                    <div class="renewal_info">d</div>
+                    <div class="ptImg_box">
+                        <img src="img/pattern.png" alt="패턴 이미지">
+                    </div>
+                    <ul>
+                        <li class="on">Lookpin</li>
+                        <li>여기어때</li>
+                        <li>Hermes</li>
+                    </ul>
                 </div>
-                <img src="img/lookpinmockup.png" alt="룩핀리뉴얼 배경이미지">
-                <h1>LOOKPIN</h1>
             </div>
-            <div></div>
         </div>
-        
-    </section>
+    </div>
+    <div class="rnRight_box">
+        <div class="renewal_1">
+            <div class="renewal_info">
+                <ul>
+                    <li>
+                        <span>Overview</span>
+                        <p>사용자들이 패션 트렌드를 보다 쉽게 확인할 수 있도록 리뉴얼한 웹사이트</p>
+                    </li>
+                    <li>
+                        <span>Program</span>
+                        <p>HTML / CSS / jQuery / Figma</p>
+                    </li>
+                    <li>
+                        <span>Work</span>
+                        <p>1인 기획 / 디자인</p>
+                    </li>
+                    <li>
+                        <span>Viewport</span>
+                        <p>웹표준 / 웹접근성</p>
+                    </li>
+                    <li>
+                        <span>Concept</span>
+                        <p>#심플한 #남성적인 #개성있는</p>
+                    </li>
+                </ul>
+                <div class="site_link">
+                    <a href="#">
+                        <div class="btnBox">
+                            <b>View Site</b>
+                            <div class="btnBox_sub"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <img src="img/lookpinmockup.png" alt="룩핀리뉴얼 배경이미지">
+            <h2>LOOKPIN</h2>
+        </div>
+        <div class="renewal_2">
+            <div class="renewal_info">
+                <ul>
+                    <li>
+                        <span>Overview</span>
+                        <p>사용자의 편의성을 초점에 두고 리뉴얼한 웹사이트</p>
+                    </li>
+                    <li>
+                        <span>Program</span>
+                        <p>HTML / CSS / jQuery / Figma</p>
+                    </li>
+                    <li>
+                        <span>Work</span>
+                        <p>1인 기획 / 디자인</p>
+                    </li>
+                    <li>
+                        <span>Viewport</span>
+                        <p>웹표준 / 웹접근성</p>
+                    </li>
+                    <li>
+                        <span>Concept</span>
+                        <p>#시원한 #힐링</p>
+                    </li>
+                </ul>
+                <div class="site_link">
+                    <a href="#">
+                        <div class="btnBox">
+                            <b>View Site</b>
+                            <div class="btnBox_sub"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <img src="img/yeogimockup.png" alt="여기어때리뉴얼 배경이미지">
+            <h2>여기어때</h2>
+        </div>
+        <div class="renewal_3">
+            <div class="renewal_info">
+                <ul>
+                    <li>
+                        <span>Overview</span>
+                        <p>사용자들이 보다 쉽게 상품들을 확인할 수 있도록 리뉴얼한 웹사이트</p>
+                    </li>
+                    <li>
+                        <span>Program</span>
+                        <p>HTML / CSS / jQuery / Figma</p>
+                    </li>
+                    <li>
+                        <span>Work</span>
+                        <p>1인 기획 / 디자인</p>
+                    </li>
+                    <li>
+                        <span>Viewport</span>
+                        <p>웹표준 / 웹접근성</p>
+                    </li>
+                    <li>
+                        <span>Concept</span>
+                        <p>#개성있는 #단순한</p>
+                    </li>
+                </ul>
+                <div class="site_link">
+                    <a href="#">
+                        <div class="btnBox">
+                            <b>View Site</b>
+                            <div class="btnBox_sub"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <img src="img/hermesmockup.png" alt="에르메스리뉴얼 배경이미지">
+            <h2>HERMES</h2>
+        </div>
+    </div>
+</section>
+<footer>
+    <h1>CONTACT</h1>
+    <div class="info">
+        <ul>
+            <li>
+                <a href="tel:010-2483-1751">
+                    <span>Phone &nbsp;&nbsp;<b>010-2483-1751</b></span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:uio6625@naver.com">
+                    <span>E-mail &nbsp;&nbsp;<b>uio6625@naver.com</b></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://open.kakao.com/o/slpaYVSe" target="_blank">
+                    <span>Kakao &nbsp;&nbsp;<b>https://open.kakao.com/o/slpaYvSe</b></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="git">
+        <a href="https://github.com/ksh002" target="_blank">
+            <img src="img/github.png" alt="깃허브 이미지">
+            <span>Git</span>
+        </a>
+    </div>
+</footer>
+<!-- footer end -->
+
+<div class="slideUp">
+    <img src="img/slideup.png" alt="맨위로 이미지">
+</div>
 </body>
 </html>
