@@ -14,8 +14,15 @@ $(function(){
         $("html").animate({scrollTop : "0"}, 400);
     })
 
-
-
+    // #web과 #design info에 있는 btnBox 호버효과
+    $(".btnBox").mouseenter(function(){
+        $(this).children().css("top",0);
+        $(this).children().css("left",0);
+    })
+    $(".btnBox").mouseleave(function(){
+        $(this).children().css("top",20+"%");
+        $(this).children().css("left",5+"%");
+    })
 
 
 
