@@ -707,8 +707,10 @@
     /* background:red; */
 }
 #design .dsRight_container > span{
+    width:100%;
+    max-width:212px;
     display:block;
-    padding-left:30%;
+    margin-left:15%;
     font-size:30px;
     font-weight:bold;
     color:#544b43;
@@ -718,8 +720,8 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: -2%;
-    width: 51%;
+    left: -3%;
+    width: 100%;
     height: 9px;
     background-color: #FFC700;
     z-index: -1;
@@ -734,7 +736,15 @@
     padding:17px 20px 0 20px;
     position:relative;
 }
-
+#design .dsRight_container .design_info .designTitle{
+    text-align:center;
+    margin-bottom:40px;
+    margin-top:10px;
+}
+#design .dsRight_container .design_info .designTitle h5{
+    font-size:25px;
+    font-weight:bold;
+}
 #design .designRight_box .design_info .logoImg_container{
     text-align:center;
 }
