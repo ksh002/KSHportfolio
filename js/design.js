@@ -1,6 +1,6 @@
 $(function(){
 
-
+    // swiper js
     const swiper = new Swiper(".mySwiper", {
         loop: true,
         centeredSlides: true,
