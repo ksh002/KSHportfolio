@@ -785,7 +785,22 @@
     -webkit-align-items: center;
     align-items: center;
 }
-
+.swiper-button-next{
+    position:absolute;
+    top:50%;
+    right:3%;
+    background: url(../img/right_arrow.png) no-repeat center;
+}
+.swiper-button-prev{
+    position:absolute;
+    top:50%;
+    left:3%;
+    background: url(../img/left_arrow.png) no-repeat center;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    display:none;
+}
 /* #design .swiper-button-prev{
     position:absolute;
     top:35%;
