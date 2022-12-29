@@ -24,8 +24,12 @@ $(function(){
         $(this).children().css("left",5+"%");
     })
 
-
-
+    // scrolla
+    $(".animate").scrolla({
+        mobile:true,
+        once: true,
+        animateCssVersion: 3
+    });
 
 
 

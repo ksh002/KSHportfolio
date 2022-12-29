@@ -5,21 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>강성훈 포트폴리오</title>
-    <script src="https://kit.fontawesome.com/10d8588d9a.js" crossorigin="anonymous"></script> <!-- 폰트어썸 cdn -->
+    <link rel="shortcut icon" href="img/favicon.ico"> <!-- 파비콘 연동 -->
     <link rel="stylesheet" href="css/common.css"> <!-- css 연동 -->
     <link rel="stylesheet" href="css/layout.css"> <!-- css 연동 -->
 
+    <script src="https://kit.fontawesome.com/10d8588d9a.js" crossorigin="anonymous"></script> <!-- 폰트어썸 cdn -->
     <script defer src="js/jquery-3.6.3.min.js"></script> <!-- jquery 연동 -->
+    <script defer src="js/jquery.scrolla.min.js"></script> <!-- scrolla 연동 -->
     <script defer src="js/script.js"></script> <!-- js 연동 -->
     <script defer src="js/common.js"></script> <!-- js 연동 -->
+
 
 </head>
 <body id="about">
 <header>
+
     <div class="header_wrap container">
         <h1 class="logo">
             <a href="index.html">
-                <img src="img/logo.png" alt="텍스트 로고">
+                <img src="img/logo2.png" alt="텍스트 로고">
             </a>
         </h1>
         <ul class="gnb">
@@ -55,8 +59,8 @@
             <div class="aboutme_left">
                 <div class="left_box">
                     <p id="dynamic" class="text_ani active"></p>
-                    <span>NICE TO MEET YOU</span>
-                    <p>
+                    <span class="animate" data-animate="motion">NICE TO MEET YOU</span>
+                    <p class="animate" data-animate="motion">
                         의견을 수렴하여 겸손한 자세로<br>
                         언제나 좋은 결과를 이뤄내기 위해<br>
                         끊임없이 노력하는 강성훈입니다.
@@ -64,14 +68,14 @@
                 </div>
             </div>
             <div class="aboutme_right">
-                <div class="right_box">
+                <div class="right_box animate" data-animate="motion">
                     <img src="img/pattern.png" alt="패턴 이미지">
                     <div class="aboutBox">
                         <h2>ABOUT <span>ME</span></h2>
                     </div>
                 </div>
             </div>
-            <div class="aboutme_center">
+            <div class="aboutme_center animate" data-animate="motion">
                 <!-- <img src="img/사진1.jpg" alt=""> -->
             </div>
         </div>
@@ -83,7 +87,7 @@
     <div class="left_bg"></div>
     <div class="container">
         <div class="whoisheBox">
-            <div class="whoishe_left">
+            <div class="whoishe_left animate" data-animate="motion">
                 <div class="profile">
                     <h4>Who is he?</h4>
                     <ul>
@@ -125,7 +129,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="whoishe_right">
+            <div class="whoishe_right animate" data-animate="motion">
                 <div class="process">
                     <h3>Work Process</h3>
                     <div class="processBox">
@@ -258,7 +262,7 @@
                     </div>
                 </div>
             </div>
-            <div class="whoishe_center">
+            <div class="whoishe_center animate" data-animate="motion">
                 <!-- <img src="img/사진2.jpg" alt=""> -->
             </div>
         </div>

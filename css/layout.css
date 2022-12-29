@@ -57,10 +57,15 @@
     align-items:center;
 }
 
-#about .aboutme .left_box > p {
+#about .aboutme .left_box > p.animate {
     font-size: 25px;
     color: #414141;
     line-height:45px;
+    opacity:0;
+    transition:all 1s;
+}
+#about .aboutme .left_box > p.animate.motion{
+    opacity:1;
 }
 #about .aboutme .left_box p.text_ani {
     font-size: 40px;
@@ -90,6 +95,13 @@
     position: relative;
     display: inline-block;
     margin: 9px 0 72px 0;
+    transform:translateY(50%);
+    transition:all 1s;
+    opacity:0;
+}
+#about .aboutme .left_box span.motion{
+    opacity:1;
+    transform:translateY(0);
 }
 #about .aboutme .left_box span::before {
     content: "";
@@ -111,6 +123,13 @@
     width: 100%;
     height: 100%;
     position:relative;
+    transform:translateX(13%);
+    opacity:0;
+    transition:all 1s;
+}
+#about .aboutme .right_box.motion{
+    transform:translateX(0);
+    opacity:1;
 }
 #about .aboutme .right_box img{
     position:absolute;
@@ -139,12 +158,17 @@
     position: absolute;
     top: 65%;
     left: 45%;
-    transform: translateY(-65%);
+    transform: translate(-15%,-65%);
     background-image: url(../img/사진1-3.jpg);
     box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
+    opacity:0;
+    transition:all 1s;
     /* border: 1px solid white; */
 }
-
+#about .aboutme .aboutme_center.motion{
+    opacity:1;
+    transform:translate(0,-65%);
+}
 #about .aboutme .aboutme_center img{
     width:100%;
     height:100%;
@@ -187,6 +211,13 @@
     width:38%;
     text-align:center;
     padding:100px 120px 0 0;
+    transform:translateX(-20%);
+    opacity:0;
+    transition:all 1s;
+}
+#about .whoishe .whoishe_left.motion{
+    transform:translateX(0);
+    opacity:1;
 }
 #about .whoishe .whoishe_left h4{
     font-size:35px;
@@ -250,6 +281,13 @@
     align-items: center;
     padding-left:330px;
     text-align:center;
+    transform:translateX(13%);
+    opacity:0;
+    transition:all 1s;
+}
+#about .whoishe .whoishe_right.motion{
+    transform:translateX(0);
+    opacity:1;
 }
 
 #about .whoishe .whoishe_right h3{
@@ -400,11 +438,21 @@
     position: absolute;
     top: 50%;
     left: 33%;
-    transform: translateY(-50%);
+    transform: translate(0,-40%);
     background-image: url(../img/사진2-3.jpg);
     box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
     /* border: 1px solid white; */
+    opacity: 0;
+    transition:all 1s;
 }
+
+#about .whoishe .whoishe_center.motion{
+    transform: translate(0,-50%);
+    opacity: 1;
+}
+
+
+
 #about .whoishe .whoishe_center img{
     width: 100%;
     height:100%;
@@ -446,6 +494,12 @@
     text-align:center;
     padding-top:124px;
     margin-bottom:70px;
+    opacity:0;
+    transition:all 1s;
+    cursor:default;
+}
+#web .renewal .wdLeft_box h3.motion{
+    opacity:1;
 }
 #web .renewal .wdLeft_box > div{
     display:flex;
@@ -458,9 +512,23 @@
     width:250px;
     height:131px;
     transform:rotate(90deg);
+    margin-top:100px;
+    opacity:0;
+    transition:all 1s;
+}
+#web .renewal .wdLeft_box > div img.motion{
+    margin-top:0;
+    opacity:1;
 }
 #web .renewal .wdLeft_box > div ul{
     padding-right:20px;
+    transform:translateX(-30%);
+    transition:all 1s;
+    opacity:0;
+}
+#web .renewal .wdLeft_box > div ul.motion{
+    opacity:1;
+    transform:translateX(0);
 }
 #web .renewal .wdLeft_box > div ul li{
     cursor: pointer;
@@ -661,15 +729,33 @@
     color:#544b43;
     display:block;
     margin:90px 0;
+    opacity:0;
+    transition:all 1s;
     cursor: default;
+}
+#design .wdLeft_box h3.motion{
+    opacity:1;
 }
 #design .wdLeft_box img:first-child{
     transform:rotate(-90deg);    
+    margin-bottom:50px;
+    transition:all 1s;
+    opacity:0;
+}
+#design .wdLeft_box img:first-child.motion{
+    margin-bottom:0;
+    opacity:1;
 }
 #design .wdLeft_box img:last-child{
-    transform:rotate(90deg);    
+    transform:rotate(90deg);
+    margin-top:50px;   
+    transition:all 1s;
+    opacity:0; 
 }
-
+#design .wdLeft_box img:last-child.motion{
+    margin-top:0;
+    opacity:1;
+}
 #design .wdRight_box{
     width:70%;
     padding-top:160px;
@@ -859,16 +945,29 @@
     margin-top:30px;
     font-size:40px;
     color:#544b43;
+    opacity:0;
+    transition:all 1s;
+}
+#story .newstart .newstartBox .mystory_left strong.motion{
+    opacity:1;
 }
 #story .newstart .newstartBox .mystory_left .mystoryBox{
     position:absolute;
     bottom:26%;
-    left:5%;
+    left:8%;
+    transform:translateX(-20%);
+    opacity:0;
+    transition:all 1s;
+}
+#story .newstart .newstartBox .mystory_left .mystoryBox.motion{
+    opacity:1;
+    transform:translateX(0);
 }
 #story .newstart .newstartBox .mystory_left .mystoryBox h2{
     font-size:70px;
     color:#544b43;
     transform:rotate(-90deg);
+    
 }
 #story .newstart .newstartBox .mystory_left .mystoryBox span{
     color:#FFC700;
@@ -893,7 +992,16 @@
     color: #544b43;
     position: relative;
     display: inline-block;
+    transition:all 1s;
+    transform:translateY(-60%);
+    opacity:0;
     /* margin: 9px 0 72px 0; */
+}
+
+#story .newstart .newstartBox .mystory_right span.motion,
+#story .realization .realizationBox .realization_left span.motion{
+    transform:translateY(0);
+    opacity:1;
 }
 #story .newstart .newstartBox .mystory_right span::before,
 #story .realization .realizationBox .realization_left span::before {
@@ -912,10 +1020,24 @@
     line-height:45px;
     color:#414141;
     margin-bottom:95px;
+    transition:all 1s;
+    opacity:0;
+}
+
+#story .newstart .newstartBox .mystory_right p.motion,
+#story .realization .realizationBox .realization_left p.motion{
+    opacity:1;
 }
 #story .newstart .newstartBox .mystory_right img{
     transform:rotate(90deg);
     margin-left:150px;
+    transition:all 1s;
+    margin-top:60px;
+    opacity:0;
+}
+#story .newstart .newstartBox .mystory_right img.motion{
+    margin-top:0;
+    opacity:1;
 }
 /* mystory_right end */
 
@@ -927,6 +1049,13 @@
     bottom:10%;
     left:20%;
     box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
+    transform:translateX(20%);
+    opacity:0;
+    transition:all 1s;
+}
+#story .newstart .newstartBox .mystory_center.motion{
+    opacity:1;
+    transform:translateX(0);
 }
 /* mystory_center end */
 /* newstart end */
@@ -979,6 +1108,13 @@
     height:460px;
     background-image: url(../img/사진4.jpg);
     box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
+    transform:translateY(20%);
+    transition:all 1s;
+    opacity:0;
+}
+#story .realization .realizationBox .realization_right > div.motion{
+    transform:translateY(0);
+    opacity:1;
 }
 
 
@@ -1006,7 +1142,14 @@
 
 #story .epilogue .ep_title{
     text-align:center;
+    transform:translateY(-20%);
+    opacity:0;
+    transition:all 1s;
     /* margin-top:30px; */
+}
+#story .epilogue .ep_title.motion{
+    opacity:1;
+    transform:translateY(0);
 }
 #story .epilogue .ep_title h1{
     font-size:70px;
@@ -1042,6 +1185,13 @@
     background-image: url(../img/사진5.jpg);
     box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
     margin:-25px auto 0 auto;
+    transform:translateX(20%);
+    transition:all 1s;
+    opacity:0;
+}
+#story .epilogue .left_box > div.motion{
+    opacity:1;
+    transform:translateX(0);
 }
 
 #story .epilogue .right_box{
@@ -1054,12 +1204,16 @@
     font-size:25px;
     color:#414141;
     line-height:45px;
+    opacity:0;
+    transition:all 1s;
 }
-
+#story .epilogue .right_box p.motion{
+    opacity:1;
+}
 #story .epilogue .right_box p.text_ani{
     font-size:50px;
     font-weight:bold;
-    color:black;
+    color:#544b43;
     position:relative;
     display:inline-block;
     margin-top:60px;
@@ -1072,7 +1226,7 @@
     right:-10px;
     width:3px;
     height:100%;
-    background-color:black;
+    background-color:#544b43;
 }
 #story .epilogue .right_box p.active::after{
     display:none;
