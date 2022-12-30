@@ -31,7 +31,18 @@ $(function(){
         $(".border .line").css("margin-top", i*40+"px");
     })
 
-    
+    $(window).resize(function(){
+        if (window.innerWidth < 1025) {
+            $(".skillBox .skill_left ul li").click(function(){ 
+                let i = $(this).index();
+        
+                $(this).addClass('active');
+                $(this).siblings().removeClass('active');
+                $(".rightBox").removeClass("active").eq(i).addClass("active");
+                $(".border .line").css("margin-top", i*29+"px");
+            })
+        }
+    })
 
 
 
