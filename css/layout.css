@@ -217,11 +217,16 @@
     opacity:0;
     transition:all 1s;
 }
+
 #about .whoishe .whoishe_left.motion{
     transform:translateX(0);
     opacity:1;
 }
-#about .whoishe .whoishe_left h4{
+#about .Tb_whoishe{
+    display:none;
+}
+#about .whoishe .whoishe_left h4,
+#about .Tb_whoishe h4{
     font-size:35px;
     font-weight:bold;
     color:#544b43;
@@ -230,27 +235,33 @@
     position:relative;
 }
 
-#about .whoishe .whoishe_left ul li{
+#about .whoishe .whoishe_left ul li,
+#about .Tb_whoishe ul li{
     padding-bottom:8px;
 }
-#about .whoishe .whoishe_left ul li span{
+#about .whoishe .whoishe_left ul li span,
+#about .Tb_whoishe ul li span{
     font-size:20px;
     font-weight:bold;
     color:#414141;
 }
-#about .whoishe .whoishe_left ul li b{
+#about .whoishe .whoishe_left ul li b,
+#about .Tb_whoishe ul li b{
     font-size:18px;
     font-weight:normal;
     color:#414141;
 }
 
-#about .whoishe .whoishe_left .profile{
+#about .whoishe .whoishe_left .profile,
+#about .Tb_whoishe .whoishe_left{
     margin-bottom:30px;
 }
-#about .whoishe .whoishe_left .profile li:last-child{
+#about .whoishe .whoishe_left .profile li:last-child,
+#about .Tb_whoishe .whoishe_left li:last-child{
     padding-bottom:0;
 }
-#about .whoishe .whoishe_left .profile h4::before {
+#about .whoishe .whoishe_left .profile h4::before,
+#about .Tb_whoishe .whoishe_left h4::before{
     content: "";
     position: absolute;
     top: 50%;
@@ -261,10 +272,12 @@
     z-index: -1;
 }
 
-#about .whoishe .whoishe_left .license li:last-child{
+#about .whoishe .whoishe_left .license li:last-child,
+#about .Tb_whoishe .license_right li:last-child{
     padding-bottom:0;
 }
-#about .whoishe .whoishe_left .license h4::before {
+#about .whoishe .whoishe_left .license h4::before,
+#about .Tb_whoishe .license_right h4::before{
     content: "";
     position: absolute;
     top: 50%;
@@ -492,6 +505,19 @@
     height:100%;
     box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
 }
+#web .renewal .wdLeft_bg > h3{
+    font-size:25px;
+    color:#544b43;
+    text-align:center;
+    padding:20px 0;
+    opacity:0;
+    transition:all 1s;
+    cursor:default;
+    display:none;
+}
+#web .renewal .wdLeft_bg > h3.motion{
+    opacity:1;
+}
 #web .renewal .wdLeft_box h3{
     font-size:40px;
     color:#544b43;
@@ -511,6 +537,12 @@
 }
 #web .renewal .wdLeft_box > div .ptImg_box{
     padding-top:140px;
+}
+#web .renewal .wdLeft_box > div .ptImg_box:last-child{
+    transform:rotate(90deg);
+    margin-right:10px;
+    /* margin-top:20px; */
+    display:none;
 }
 #web .renewal .wdLeft_box > div img{
     width:250px;
@@ -690,7 +722,9 @@
     writing-mode: vertical-rl;
     cursor: default;
 }
-
+#web .renewal .Tb_renewal_info{
+    display:none;
+}
 
 #web .renewal .wdRight_box .renewal_2{
     background-image: url(../img/yeogi_bg.jpg);
@@ -955,6 +989,9 @@
 #story .newstart .newstartBox .mystory_left strong.motion{
     opacity:1;
 }
+#story .newstart .newstartBox .mystory_right strong{
+    display:none;
+}
 #story .newstart .newstartBox .mystory_left .mystoryBox{
     position:absolute;
     bottom:26%;
@@ -1027,7 +1064,9 @@
     transition:all 1s;
     opacity:0;
 }
-
+#story .realization .realizationBox .realization_left p:last-child{
+    display:none;
+}
 #story .newstart .newstartBox .mystory_right p.motion,
 #story .realization .realizationBox .realization_left p.motion{
     opacity:1;
@@ -1211,6 +1250,8 @@
     opacity:0;
     transition:all 1s;
 }
+
+
 #story .epilogue .right_box p.motion{
     opacity:1;
 }
@@ -1273,7 +1314,14 @@
     header .gnb li span{
         font-size:16px;
     }
+    footer{
+        width:100%;
+        padding:0 180px;
+    }
     /* header end */
+    #about{
+        /* height:1000px; */
+    }
     #about .aboutme{
         height:787px;
         margin-bottom:0;
@@ -1340,9 +1388,11 @@
     }
     /* aboutmeBox end */
 
-    #about .whoishe .left_bg{
+    #about .whoishe .left_bg,
+    #about .Tb_whoishe .right_bg{
         width:516px;
         height:522px;
+        background-color:#bfa58e;
     }
     #about .whoishe .whoisheBox{
         width:100%;
@@ -1372,16 +1422,25 @@
         margin-bottom:20px;
     }
     #about .whoishe .whoisheBox .whoishe_left .process .processBox{
-        width:266px;
+        width:236px;
         height:188px;
         border-radius: 30px;
         background-color:#f4ede7;
+        /* padding-left:1px; */
+        /* padding-right:24px; */
+        padding-top:15px;
     }
     #about .whoishe .whoisheBox .whoishe_left .process .processBox ul{
         width:170px;
         height:133px;
         display:flex;
-        flex-direction:wrap;
+        flex-wrap: wrap;
+        margin:0 auto;
+        /* flex-direction:wrap; */
+    }
+    #about .whoishe .whoisheBox .whoishe_left .process .processBox ul li{
+        width:33%;
+        margin-bottom:10px;
     }
     #about .whoishe .whoisheBox .whoishe_left .process .processBox ul li img{
         width:40px;
@@ -1390,8 +1449,19 @@
         font-size:11px;
         color:black;
     }
+    #about .whoishe .whoisheBox .whoishe_left .process .processBox ul li:nth-child(4){
+        margin-left:30px;
+    }
     #about .whoishe .whoishe_center{
-        display:none;
+        /* display:none; */
+        background-image: url(../img/1024picture2.jpg);
+        width:100%;
+        max-width:330px;
+        height:100%;
+        max-height:375px;
+        position:absolute;
+        top:75%;
+        z-index:10;
     }
     #about .whoishe .whoisheBox .whoishe_right{
         padding-left:0;
@@ -1399,6 +1469,7 @@
     #about .whoishe .whoisheBox .whoishe_right .process{
         display:none;
     }
+    
     #about .whoishe .whoisheBox .whoishe_right .skill h3{
         font-size:20px;
     }
@@ -1407,6 +1478,9 @@
         height:188px;
         border-radius: 30px;
         position:relative;
+    }
+    #about .whoishe .whoisheBox .whoishe_right .skill .skillBox .skill_left .iBox{
+        text-align:center;
     }
     #about .whoishe .whoisheBox .whoishe_right .skill .skillBox .skill_left i{
         font-size:14px;
@@ -1427,7 +1501,7 @@
     }
     #about .whoishe .whoisheBox .whoishe_right .skill .skillBox .border .line{
         width:3px;
-
+        margin-left:-1px;
     }
     #about .whoishe .whoisheBox .whoishe_right .skill_right .skillImg img{
         width:46px;
@@ -1441,6 +1515,416 @@
     }
     #about .whoishe .whoisheBox .whoishe_right .skill_right .rightBox p{
         font-size:8px;
+    }
+
+    #about .Tb_whoishe{
+        height:522px;
+        margin-top:-13%;
+        position:relative;
+        display:block;
+    }
+    #about .Tb_whoishe .right_bg{
+        position:absolute;
+        right:0;
+        z-index:-1;
+    }
+    #about .Tb_whoishe .container{
+        height:100%;
+        padding:80px 0 80px 0;
+    }
+    #about .Tb_whoishe .whoisheBox{
+        display: flex;
+        width:100%;
+        height:100%;
+        box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
+    }
+    #about .Tb_whoishe .whoisheBox .whoishe_left{
+        width:50%;
+        text-align:center;
+        padding-top:46px;
+        transition:all 1s;
+        opacity:0;
+    }
+    #about .Tb_whoishe .whoisheBox .whoishe_left.motion{
+        opacity:1;
+    }
+    #about .Tb_whoishe .whoisheBox .license_right{
+        width:50%;
+        text-align:center;
+        padding-top:46px;
+        transition:all 1s;
+        opacity:0;
+    }
+    #about .Tb_whoishe .whoisheBox .license_right.motion{
+        opacity:1;
+    }
+    #web .renewal .wdLeft_box > div{
+        height:100%;
+    }
+    #web .renewal .wdLeft_container{
+        padding-top:0;
+        padding-left:35px;
+        /* height:50%; */
+        /* padding-right:35px; */
+        /* padding-bottom:500px; */
+    }
+    #web .renewal .wdLeft_bg .wdLeft_box{
+        width:100%;
+        height:auto;
+        margin-top:40px;
+    }
+    #web .renewal .wdLeft_bg .wdLeft_box h3{
+        display:none;
+    }
+    #web .renewal .wdLeft_bg > h3{
+        display:block;
+        margin-top:40px;
+        /* padding-top:50px; */
+    }
+    #web .renewal .wdLeft_box > div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #web .renewal .wdLeft_box > div .ptImg_box{
+        /* position:absolute;
+        top:41%;
+        left:33%; */
+        padding:0;
+        transform:rotate(270deg);
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+    #web .renewal .wdLeft_box > div .ptImg_box img{
+        width:140px;
+        height:78px;
+        transform:rotate(0);
+    }
+    #web .renewal .wdLeft_box > div .ptImg_box:last-child{
+        display:block;
+    }
+    #web .renewal .wdLeft_box > div ul{
+        /* position:absolute;
+        top:40%;
+        left:40%; */
+        /* transform:translateY(-50%); */
+        padding:0;
+    }
+    #web .renewal .wdLeft_box > div ul li{
+        font-size:25px;
+    }
+    #web .renewal .wdLeft_box > div ul li:nth-child(2){
+        margin:5px 0;
+    }
+
+
+    #web .renewal .wdRight_box{
+        padding-top:80px;
+        padding-right:35px;
+        padding-bottom:0;
+        height:100%;
+    }
+    #web .renewal .wdRight_box img{
+        width:373px;
+        height:271px;
+    }
+    #web .renewal .wdRight_box h2{
+        font-size:50px;
+        writing-mode: inherit;
+        position:absolute;
+        top:10%;
+    }
+    #web .renewal .wdRight_box .renewal_1,
+    #web .renewal .wdRight_box .renewal_2,
+    #web .renewal .wdRight_box .renewal_3{
+        height: 91vh;
+        align-items: inherit;
+        justify-content: center;
+        padding-top: 160px;
+        position: relative;
+        margin-bottom: 0;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+    #web .renewal .renewal_info{
+        display:none;
+    }
+    #web .renewal .Tb_renewal_info{
+        display:flex;
+        position:absolute;
+        bottom:220px;
+        background-color:rgba(255,255,255,0.5);
+        border-radius: 15px;
+        width:454px;
+        height:173px;
+        /* padding:0 15px; */
+    }
+    #web .renewal .Tb_renewal_info .info_left{
+        /* background:blue; */
+        /* width:20%; */
+    }
+    #web .renewal .Tb_renewal_info .info_left ul{
+        text-align:right;
+        /* background:blue; */
+        padding:8px 20px 0;
+    }
+    #web .renewal .Tb_renewal_info .info_left ul li{
+        padding-bottom:5px;
+    }
+    #web .renewal .Tb_renewal_info .info_right{
+        padding-top:1px;
+    }
+    #web .renewal .Tb_renewal_info .info_right ul{
+        padding:8px 0 0;
+    }
+    #web .renewal .Tb_renewal_info .info_right ul li{
+        
+    }
+    #web .renewal .Tb_renewal_info span{
+        display:block;
+        font-size:12px;
+        font-weight:bold;
+        color:black;
+    }
+    #web .renewal .Tb_renewal_info b{
+        display:block;
+        font-size:10px;
+        font-weight:normal;
+        height:17px;
+    }
+    #web .renewal .site_link{
+        bottom:20px;
+    }
+    #web .renewal .site_link p{
+        font-size:16px;
+        font-weight:900;
+        transform:skew(20deg);
+    }
+    
+    #design .renewal .wdLeft_container{
+        padding-left:40px;
+    }
+    
+    #design .wdLeft_box h3{
+        font-size:30px;
+    }
+    #design .wdLeft_box img{
+        width:181px;
+    }
+    #design .dsLeft_container img{
+        width:468px;
+        height:293px;
+        position:absolute;
+        top:12%;
+        margin-left:13%;
+    }
+    #design .dsRight_container > span{
+        position:absolute;
+        z-index:1;
+        font-size:25px;
+        top:5%;
+        left:25%;
+        
+    }
+    #design .dsRight_container .design_info{
+        width:408px;
+        height:289px;
+        position:absolute;
+        top:50%;
+        left:17%;
+        padding-top:5px;
+    }
+    #design .dsRight_container .design_info .designTitle{
+        margin-bottom:20px;
+    }
+    .swiper-button-next{
+        top:32%;
+    }
+    .swiper-button-prev{
+        top:32%;
+    }
+    .btnBox{
+        width:93px;
+    }
+    .btnBox b{
+        font-size: 12px;
+        width:100%;
+    }
+    #design .designRight_box .design_info .btnBox_container{
+        justify-content: space-around;
+    }
+    #design .dsRight_container .design_info ul li span{
+        font-size:12px;
+    }
+    #design .dsRight_container .design_info ul li p{
+        font-size:12px;
+    }
+    #design .dsRight_container .design_info .logoImg_container img{
+        width:87px;
+    }
+    #design .dsRight_container > span::before{
+        width:84%;
+        height:6px;
+    }
+    #story .newstart{
+        height:auto;
+    }
+    #story .newstart .left_bg{
+        width:35%;
+        height:717px;
+    }
+    
+    #story .newstart .newstartBox{
+        height:529px;
+    }
+    #story .newstart .newstartBox .mystory_left{
+        width:34%;
+    }
+    #story .newstart .newstartBox .mystory_left strong{
+        display:none;
+    }
+    #story .newstart .newstartBox .mystory_right strong{
+        font-size:25px;
+        color:#544b43;
+        display:block;
+        margin-left:30px;
+        margin-top:50px;
+        transition:all 1s;
+        opacity:0;
+    }
+    #story .newstart .newstartBox .mystory_right strong.motion{
+        opacity:1;
+    }
+    #story .newstart .newstartBox .mystory_right span{
+        font-size:20px;
+        margin-top:50px;
+        margin-bottom:20px;
+    }
+    #story .newstart .newstartBox .mystory_right span::before{
+        height:6px;
+    }
+    #story .newstart .newstartBox .mystory_right p{
+        font-size:18px;
+        line-height:30px;
+        margin-bottom: 60px;
+    }
+    #story .newstart .newstartBox .mystory_right img{
+        width:179px;
+        margin-left:100px;
+    }
+    #story .newstart .newstartBox .mystory_left .mystoryBox{
+
+    }
+    #story .newstart .newstartBox .mystory_left .mystoryBox h2{
+        transform:skew(0deg);
+        font-size:40px;
+        display:inline-block;
+        margin-bottom:300px;
+        margin-left:80px;
+    }
+
+    #story .newstart .newstartBox .mystory_center{
+        /* display:none; */
+        width:100%;
+        max-width:331px;
+        height:363px;
+        background-size:cover;
+        left:110px;
+    }
+
+    #story .realization{
+        height:auto;
+    }
+    #story .realization .right_bg{
+        width:100%;
+        max-width:276px;
+        height:100%;
+        max-height:605px;
+    }
+    #story .realization .container{
+        padding-top:90px;
+    }
+    #story .realization .container .realizationBox{
+        height:527px;
+        /* margin-bottom:600px; */
+    }
+
+    #story .realization .realizationBox .realization_left{
+        padding-right:0;
+    }
+    #story .realization .realizationBox .realization_left span{
+        font-size:20px;
+        margin-top:50px;
+        margin-bottom:40px;
+    }
+    #story .realization .realizationBox .realization_left span::before{
+        height:6px;
+    }
+    #story .realization .realizationBox .realization_left p{
+        font-size: 18px;
+    }
+    #story .realization .realizationBox .realization_left p.pointText{
+        display:none;
+    }
+    #story .realization .realizationBox .realization_left p:last-child{
+        display:block;
+        line-height: 30px;
+    }
+    #story .realization .realizationBox .realization_right{
+        width:276px
+    }
+    #story .realization .realizationBox .realization_right > div{
+        width:100%;
+        max-width:314px;
+        height:324px;
+        background-size:cover;
+        margin-top:100px;
+        margin-left:40px;
+    }
+    
+    #story .epilogue{
+        height:750px;
+    }
+    #story .epilogue .title_bg{
+        height:70px;
+    }
+    #story .epilogue .ep_title h1{
+        font-size:40px;
+        margin-top:5px;
+    }
+    #story .epilogue .ep_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #story .epilogue .ep_container .left_box{
+        height:auto;
+        /* margin-bottom:50px; */
+    }
+    #story .epilogue .ep_container .left_box > div{
+        width:316px;
+        height:340px;
+        background-size:cover;
+        margin-top:50px;
+        margin-bottom:40px;
+    }
+    #story .epilogue .ep_container .right_box{
+        padding:0;
+        width:100%;
+        height:auto;
+        text-align:center;
+    }
+    #story .epilogue .right_box p.endText{
+        font-size:18px;
+        line-height:30px;
+        /* display:block; */
+    }
+    #story .epilogue .ep_container .right_box p.text_ani{
+        margin-top:20px;
+        font-size:35px;
+    }
+    #story footer{
+        
     }
 }
 

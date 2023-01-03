@@ -3,7 +3,7 @@ $(function(){
     // 페이지 특정 scroll범위에서 leftBox의 li한테 on클래스를 주는 스크립트
     $(window).scroll(function () {
         let height = $(document).scrollTop();
-        // console.log(height);
+        console.log(height);
 
         if(height < 533){
             $(".wdLeft_box > div ul li:first-child").addClass("on");
@@ -34,7 +34,19 @@ $(function(){
         $("html").animate({scrollTop : "1937"}, 500);
     })
 
-
+    $(window).resize(function(){
+        if(window.innerWidth < 1025){
+            $("#web .renewal .wdLeft_box > div ul li:first-child").click(function(){
+                $("html").animate({scrollTop : "0"}, 500);
+            });
+            $("#web .renewal .wdLeft_box > div ul li:nth-child(2)").click(function(){
+                $("html").animate({scrollTop : "855"}, 500);
+            });
+            $("#web .renewal .wdLeft_box > div ul li:last-child").click(function(){
+                $("html").animate({scrollTop : "1722"}, 500);
+            });
+        } 
+    })
     
 
 

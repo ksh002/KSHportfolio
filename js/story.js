@@ -28,7 +28,10 @@ $(function(){
         let scrollTop = $(document).scrollTop();
         // $(".scroll_box").text(scrollTop);
         
-
+        // $(window).resize(function(){
+        //     if(window.innerWidth < 1025 && scrollTop >=1180){
+        //         dynamic(selectStringArr);
+        //     }
 
         if(scrollTop >= 1600){
 
@@ -41,5 +44,6 @@ $(function(){
         }
     })
 
+    
     
 })
