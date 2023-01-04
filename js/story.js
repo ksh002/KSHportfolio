@@ -24,24 +24,26 @@ $(function(){
     }
 
 
+    // Watch for Thank you 해상도 width값에 따른 타이핑애니메이션 효과
     $(document).on("scroll",function(){
         let scrollTop = $(document).scrollTop();
-        // $(".scroll_box").text(scrollTop);
+        let winWidth = $(document).innerWidth();
         
-        // $(window).resize(function(){
-        //     if(window.innerWidth < 1025 && scrollTop >=1180){
-        //         dynamic(selectStringArr);
-        //     }
 
-        if(scrollTop >= 1600){
 
+        if(winWidth <= 1024 && scrollTop >= 1280){
             if(checked){
                 dynamic(selectStringArr);
             }
-
-
-
         }
+
+        if(winWidth >= 1025 && scrollTop >= 1600){
+            if(checked){
+                dynamic(selectStringArr);
+            }
+        }
+
+        
     })
 
     
