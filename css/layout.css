@@ -226,7 +226,8 @@
     display:none;
 }
 #about .whoishe .whoishe_left h4,
-#about .Tb_whoishe h4{
+#about .Tb_whoishe h4,
+#about .Mb_whoishe h4{
     font-size:35px;
     font-weight:bold;
     color:#544b43;
@@ -236,17 +237,20 @@
 }
 
 #about .whoishe .whoishe_left ul li,
-#about .Tb_whoishe ul li{
+#about .Tb_whoishe ul li,
+#about .Mb_whoishe ul li{
     padding-bottom:8px;
 }
 #about .whoishe .whoishe_left ul li span,
-#about .Tb_whoishe ul li span{
+#about .Tb_whoishe ul li span,
+#about .Mb_whoishe ul li span{
     font-size:20px;
     font-weight:bold;
     color:#414141;
 }
 #about .whoishe .whoishe_left ul li b,
-#about .Tb_whoishe ul li b{
+#about .Tb_whoishe ul li b,
+#about .Mb_whoishe ul li b{
     font-size:18px;
     font-weight:normal;
     color:#414141;
@@ -261,7 +265,8 @@
     padding-bottom:0;
 }
 #about .whoishe .whoishe_left .profile h4::before,
-#about .Tb_whoishe .whoishe_left h4::before{
+#about .Tb_whoishe .whoishe_left h4::before,
+#about .Mb_whoishe h4::before{
     content: "";
     position: absolute;
     top: 50%;
@@ -473,6 +478,10 @@
 #about .whoishe .whoishe_center img{
     width: 100%;
     height:100%;
+}
+
+#about .Mb_whoishe{
+    display:none;
 }
 /* whoishe end */
 /* about end */
@@ -1286,6 +1295,12 @@
     background-color: #FFC700;
     z-index: -1;
 }
+#web .mobile_renewal{
+    display:none;
+}
+#design .MB_container{
+    display:none;
+}
 /* story end */
 
 
@@ -1926,6 +1941,12 @@
     #story footer{
         
     }
+    #web .mobile_renewal{
+        display:none;
+    }
+    #design .MB_container{
+        display:none;
+    }
 }
 
 /* Mobile Device */
@@ -1960,13 +1981,44 @@
     header .gnb li span{
         font-size:14px;
     }
-    
+    footer{
+        width:100%;
+        height:100px;
+        padding:0;
+        justify-content: space-around;
+    }
+    footer h1{
+        font-size:16px;
+    }
+    footer h1::before{
+        height:4px;
+    }
+    footer .info ul li:nth-child(2){
+        padding:5px 0;
+    }
+    footer .info ul li span{
+        font-size:13px;
+    }
+    footer .info ul li b{
+        font-size:13px;
+    }
+    footer .git img{
+        width:50px;
+        height:50px;
+    }
+    footer .git span{
+        font-size:13px;
+    }
+    .slideUp img{
+        display:none;
+    }
+
     #about .aboutme{
         height:auto;
     }
     #about .aboutme .container{
         height:auto;
-        padding:50px 0;
+        padding:50px 0 0 0;
     }
     #about .aboutme .right_bg{
         display:none;
@@ -2022,11 +2074,15 @@
         transform:translateX(-50%);
         
     }
+    #about .whoishe .container{
+        padding-top:40px;
+    }
     #about .whoishe .whoisheBox{
         width:100%;
-        max-width:662px;
-        height:548px;
+        max-width:548px;
+        height:662px;
         margin:0 auto;
+        
     }
     #about .whoishe .whoisheBox .whoishe_left{
         display:none;
@@ -2038,8 +2094,8 @@
     #about .whoishe .whoishe_right .process{
         position:absolute;
         top:0;
-        left:50%;
-        padding-top:37px;
+        left:42%;
+        padding-top:24px;
     }
     #about .whoishe .whoishe_right .processBox{
         width:266px;
@@ -2078,8 +2134,336 @@
         font-size:11px;
         display:block;
     }
+    #about .whoishe .whoishe_right h3{
+        font-size: 20px;
+        margin-bottom:20px;
+    }
+    #about .whoishe .whoishe_right .skillBox{
+        width:366px;
+        height:188px;
+        border-radius: 30px;
+    }
+    #about .whoishe .whoishe_right .skill_left ul li span{
+        font-size:10px;
+    }
+    #about .whoishe .whoishe_right .skill_left ul li i{
+        font-size:15px;
+    }
+    #about .whoishe .whoishe_right .skill{
+        position:absolute;
+        top:53%;
+        left:27%;
+    }
+    #about .whoishe .whoishe_right .skill_right .rightBox .skillImg img{
+        width:45px;
+        height:45px;
+    }
+    #about .whoishe .whoishe_right .skill_right .rightBox span{
+        font-size:12px;
+    }
+    #about .whoishe .whoishe_right .skill_right .rightBox p{
+        font-size:10px;
+    }
+    #about .whoishe .whoishe_right .skill_left{
+        width:30%;
+        /* background:blue; */
+    }
+    #about .whoishe .whoishe_right .skill_left ul li{
+        padding-left:13px;
+        margin:0;
+        margin-bottom:5px;
+    }
+    #about .whoishe .whoishe_right .border{
+        margin-top:25px;
+        margin-left:10px;
+        height:144px;
+    }
+    #about .whoishe .whoishe_right .skill_right .rightBox{
+        padding:0 30px;
+    }
     #about .whoishe .whoishe_center.motion{
+        width:100%;
+        max-width:330px;
+        height:400px;
+        background-size:cover;
+        top:95%;
+        left:28%;
+        /* display:none; */
+    }
+    #about .Mb_whoishe{
+        display:block;
+        height:620px;
+        position:relative;
+    }
+    #about .Mb_whoishe .bottom_bg{
+        background-color:#bfa58e;
+        width:100%;
+        max-width:728px;
+        height:330px;
+        position:absolute;
+        bottom:0;
+        left:50%;
+        transform:translateX(-50%);
+        z-index:-1;
+    }
+    #about .Mb_whoishe .whoisheBox{
+        width:100%;
+        max-width:580px;
+        height:548px;
+        box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
+        margin:0 auto;
+        margin-top:100px;
+    }
+    #about .Mb_whoishe .whoisheBox h4{
+        font-size:25px;
+        margin-bottom:15px;
+    }
+    #about .Mb_whoishe .whoisheBox h4::before{
+        height:6px;
+    }
+    #about .Mb_whoishe .whoisheBox ul li span{
+        font-size:16px;
+    }
+    #about .Mb_whoishe .whoisheBox .whoishe_top{
+        text-align:center;
+        padding-top:60px;
+        margin-bottom:30px;
+        transition:all 1s;
+        opacity:0;
+    }
+    #about .Mb_whoishe .whoisheBox .whoishe_top.motion{
+        opacity:1;
+    }
+    #about .Mb_whoishe .whoisheBox .whoishe_bottom{
+        text-align:center;
+        transition:all 1s;
+        opacity:0;
+    }
+    #about .Mb_whoishe .whoisheBox .whoishe_bottom.motion{
+        opacity:1;
+    }
+    /* about end */
+
+    #web .renewal{
         display:none;
+    }
+    #web .wdLeft_bg{
+        display:none;
+    }
+    #web .mobile_renewal{
+        display:block;
+        width:100%;
+        max-width:768px;
+        /* height:2040px; */
+        /* background-color:#bfa58e; */
+        padding-top:80px;
+        /* position:relative; */
+    }
+    #web .mobile_renewal .MBrenewal,
+    #design .MBrenewal{
+        background-color:#bfa58e;
+        padding-top:40px;
+    }
+    #design .MB_container{
+        padding-top:40px;
+    }
+    #design .MBrenewal{
+        padding-top:80px;
+    }
+    #web .mobile_renewal .MBrenewal_container,
+    #design .MBrenewal .MBrenewal_container{
+        width:100%;
+        max-width:630px;
+        height:120px;
+        /* background:blue; */
+        margin:0 auto;
+        /* padding-top:120px; */
+        /* position:absolute; */
+        /* bottom:0; */
+        /* left:50%; */
+        /* transform:translateX(-50%); */
+        box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #web .mobile_renewal .MBrenewal_container img:first-child,
+    #design .MBrenewal .MBrenewal_container img:first-child{
+        transform:rotate(180deg);
+    }
+    #web .mobile_renewal .MBrenewal_container img,
+    #design .MBrenewal .MBrenewal_container img{
+        width:134px;
+        height:70px;
+        
+    }
+    
+    #web .mobile_renewal .MBrenewal_container h3,
+    #design .MBrenewal .MBrenewal_container h3{
+        font-size:25px;
+        color:#544b43;
+        font-weight:bold;
+    }
+    #web .mobile_renewal .container{
+        background-color:#f4ede7;
+        box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
+        width:630px;
+        margin:0 auto;
+        height:544px;
+        position:relative;
+    }
+    #web .mobile_renewal .container .MBbg{
+        width:100%;
+        max-width:568px;
+        height:474px;
+        margin-left:31px;
+    }
+    #web .mobile_renewal .container .MBbg .renewal1_bg{
+        background-image: url(../img/lookpin_bg.jpg);
+        background-size:cover;
+        width:100%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #web .mobile_renewal .container .MBbg .renewal1_bg.yeogi{
+        background-image: url(../img/yeogi_bg.jpg);
+    }
+    #web .mobile_renewal .container .MBbg .renewal1_bg.hermes{
+        background-image: url(../img/hermes_bg.jpg);
+    }
+    
+    #web .mobile_renewal .container .MBbg .renewal1_bg img{
+        width:253px;
+        height:211px;
+    }
+    #web .mobile_renewal .container .MBbg .renewal1_bg .Tb_renewal_info{
+        width:444px;
+        height:193px;
+        background-color:rgba(255,255,255,0.5);
+        border-radius: 15px;
+        display:flex;
+        padding-top:5px;
+        padding-left:15px;
+    }
+    #web .mobile_renewal .container .MBbg .renewal1_bg .Tb_renewal_info .info_left ul{
+        padding-top:5px;
+    }
+    #web .mobile_renewal .container .MBbg .renewal1_bg .Tb_renewal_info .info_left ul li{
+        font-size: 12px;
+        font-weight:bold;
+        padding-right:30px;
+        text-align:right;
+        padding-bottom:7px;
+    }
+    #web .mobile_renewal .container .MBbg .renewal1_bg .Tb_renewal_info .info_right ul li b{
+        font-size:10px;
+        font-weight:normal;
+    }
+    #web .mobile_renewal .container .MBbg .renewal1_bg .Tb_renewal_info .site_link .btnBox p{
+        transform:skew(20deg);
+    }
+    #web .mobile_renewal .container .MBbg .renewal1_bg .Tb_renewal_info .site_link .btnBox p{
+        font-weight:bold;
+    }
+    #web .mobile_renewal .container .title_container{
+        height:70px;
+        background-color:#bfa58e;
+        box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
+        text-align:center;
+        padding-top:20px;
+    }
+    #web .mobile_renewal .container .title_container span{
+        font-size:20px;
+        font-weight:bold;
+        color:#544b43;
+    }
+    
+    #design .renewal{
+        display:inherit;
+        height:750px;
+    }
+    #design .wdLeft_bg{
+        display:none;
+    }
+    #design .wdRight_box{
+        padding:0;
+        height:100%;
+    }
+    #design .wdRight_box .designRight_box{
+        width:630px;
+        margin-left:61px;
+    }
+    #design .dsRight_container > span{
+        font-size:20px;
+        width:auto;
+        margin:0;
+        position:absolute;
+        top:40px;
+        left:50%;
+        transform:translateX(-50%);
+    }
+    #design .dsRight_container > span::before{
+        height:6px;
+        width:107%;
+    }
+    #design .dsLeft_container img{
+        width:100%;
+        max-width:468px;
+        height:293px;
+        position:absolute;
+        top:94px;
+        
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        top:31%;
+    }
+    #design .dsRight_container .design_info{
+        width:278px;
+        height:300px;
+        border-radius: 15px;
+        padding-top:5px;
+        position:absolute;
+        margin-bottom:0;
+        bottom:30px;
+        left:50%;
+        transform:translateX(-50%);
+    }
+    #design .dsRight_container .design_info ul li span,
+    #design .dsRight_container .design_info ul li p{
+        font-size:10px;
+    }
+    #design .dsRight_container .design_info .designTitle h5{
+        font-size:20px;
+    }
+    #design .designRight_box .design_info .logoImg_container img{
+        width:87px;
+        height:87px;
+    }
+    .btnBox{
+        width:93px;
+        height:26px;
+    }
+    .btnBox b{
+        width:93px;
+        font-size:12px;
+    }
+    #design .MB_container{
+        display:block;
+    }
+    #design .bottom_bar{
+        height:100px;
+        width:100%;
+        background-color:#bfa58e;
+        padding:0 60px 40px 60px;
+    }
+    #design .bottom_bar > div{
+        width:100%;
+        height:100%;
+        box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
     }
 }
 
