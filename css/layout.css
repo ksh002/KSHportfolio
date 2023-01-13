@@ -1035,7 +1035,8 @@
     margin-left:30%;
 }
 #story .newstart .newstartBox .mystory_right span,
-#story .realization .realizationBox .realization_left span{
+#story .realization .realizationBox .realization_left span,
+#story .mobile_story .container .MBmystoryBox .newstartBox span{
     margin:160px 0 40px 0;
     font-size: 35px;
     font-weight: bold;
@@ -1049,12 +1050,14 @@
 }
 
 #story .newstart .newstartBox .mystory_right span.motion,
-#story .realization .realizationBox .realization_left span.motion{
+#story .realization .realizationBox .realization_left span.motion,
+#story .mobile_story .container .MBmystoryBox .newstartBox span.motion{
     transform:translateY(0);
     opacity:1;
 }
 #story .newstart .newstartBox .mystory_right span::before,
-#story .realization .realizationBox .realization_left span::before {
+#story .realization .realizationBox .realization_left span::before,
+#story .mobile_story .container .MBmystoryBox .newstartBox span::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -1299,6 +1302,9 @@
     display:none;
 }
 #design .MB_container{
+    display:none;
+}
+#story .mobile_story{
     display:none;
 }
 /* story end */
@@ -1647,7 +1653,7 @@
         font-size:50px;
         writing-mode: inherit;
         position:absolute;
-        top:10%;
+        top:80px;
     }
     #web .renewal .wdRight_box .renewal_1,
     #web .renewal .wdRight_box .renewal_2,
@@ -1668,7 +1674,7 @@
     #web .renewal .Tb_renewal_info{
         display:flex;
         position:absolute;
-        bottom:220px;
+        top:480px;
         background-color:rgba(255,255,255,0.5);
         border-radius: 15px;
         width:454px;
@@ -2027,6 +2033,7 @@
         height:570px;
         flex-direction: column;
         position:relative;
+        box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
     }
     #about .aboutme .aboutmeBox .left_box{
         /* background:blue; */
@@ -2082,7 +2089,7 @@
         max-width:548px;
         height:662px;
         margin:0 auto;
-        
+        box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
     }
     #about .whoishe .whoisheBox .whoishe_left{
         display:none;
@@ -2210,7 +2217,7 @@
         width:100%;
         max-width:580px;
         height:548px;
-        box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
+        box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
         margin:0 auto;
         margin-top:100px;
     }
@@ -2306,7 +2313,7 @@
     }
     #web .mobile_renewal .container{
         background-color:#f4ede7;
-        box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
+        box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
         width:630px;
         margin:0 auto;
         height:544px;
@@ -2371,7 +2378,7 @@
     #web .mobile_renewal .container .title_container{
         height:70px;
         background-color:#bfa58e;
-        box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
+        box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
         text-align:center;
         padding-top:20px;
     }
@@ -2447,8 +2454,12 @@
         width:93px;
         height:26px;
     }
-    .btnBox b{
+    .btnBox p{
         width:93px;
+        font-size:12px;
+    }
+    .btnBox b{
+        width:auto;
         font-size:12px;
     }
     #design .MB_container{
@@ -2463,7 +2474,151 @@
     #design .bottom_bar > div{
         width:100%;
         height:100%;
-        box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
+        box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
+    }
+
+    #story .mobile_story{
+        display:block;
+        height:2050px;
+        position:relative;
+    }
+    #story .mobile_story .bg_bar{
+        width:100%;
+        max-width:768px;
+        height:351px;
+        background-color:#bfa58e;
+        position:absolute;
+        z-index:-1;
+    }
+    #story .mobile_story .bg_bar2{
+        width:100%;
+        max-width:768px;
+        height:197px;
+        background-color:#bfa58e;
+        position:absolute;
+        top:35%;
+        z-index:-1;
+    }
+    #story .mobile_story .container{
+        width:100%;
+        max-width:529px;
+        height:1341px;
+        padding-top:50px;
+        margin-top:80px;
+    }
+    #story .mobile_story .container .MBmystoryBox{
+        width:100%;
+        height:1341px;
+        box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
+        text-align:center;
+        padding-top:30px;
+    }
+    #story .mobile_story .container .MBmystoryBox strong{
+        display:block;
+        font-size:22px;
+        font-weight:bold;
+        color:#544b43;
+        margin-bottom:30px;
+    }
+    #story .mobile_story .container .MBmystoryBox div.picture1{
+        width:100%;
+        max-width:331px;
+        height:363px;
+        margin:0 auto;
+        background-image: url(../img/picture3.jpg);
+        background-size:cover;
+    }
+    #story .mobile_story .container .MBmystoryBox .mystoryBox{
+        transform:rotate(90deg);
+        position:absolute;
+        right:80px;
+        top:200px;
+    }
+    #story .mobile_story .container .MBmystoryBox .mystoryBox h2{
+        font-size:35px;
+        color:#544b43;
+    }
+    
+    #story .mobile_story .container .MBmystoryBox .mystoryBox span{
+        color:#FFC700;
+    }
+    #story .mobile_story .container .MBmystoryBox .newstartBox span{
+        font-size:20px;
+        margin-top:30px;
+        margin-bottom:20px;
+    }
+    #story .mobile_story .container .MBmystoryBox .newstartBox span::before{
+        height:5px;
+    }
+    #story .mobile_story .container .MBmystoryBox p{
+        font-size:18px;
+        line-height:30px;
+        margin-bottom:100px;
+    }
+    #story .mobile_story .container .MBmystoryBox div.picture2{
+        width:100%;
+        max-width:314px;
+        height:324px;
+        background-image: url(../img/picture4.jpg);
+        background-size:cover;
+        margin:0 auto;
+        box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
+    }
+    #story .mobile_story .bg_bar3{
+        width:100%;
+        height:50px;
+        background-color:#bfa58e;
+    }
+    #story .mobile_story .ep_title{
+        width:100%;
+        height:50px;
+        text-align:center;
+        position:absolute;
+        top:1317px;
+        z-index:1;
+    }
+    #story .mobile_story .ep_title.end{
+        top:1950px;
+    }
+    #story .mobile_story .ep_title h1{
+        font-size:35px;
+        font-weight:bold;
+        color:#544b43;
+        position:relative;
+        display:inline-block;
+        margin-top:20px;
+    }
+    #story .mobile_story .ep_title h1::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -2%;
+        width: 104%;
+        height: 9px;
+        background-color: #FFC700;
+        z-index: -1;
+    }
+    #story .mobile_story div.picture3{
+        width:316px;
+        height:340px;
+        background-image:url(../img/picture5.jpg);
+        background-size:cover;
+        margin:0 auto;
+        margin-top:35px;
+        margin-bottom:40px;
+        box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
+    }
+    #story .mobile_story .endTextBox{
+        text-align:center;
+    }
+    #story .mobile_story .endTextBox p{
+        font-size:18px;
+        line-height:35px;
+    }
+    #story .newstart,
+    #story .realization,
+    #story .epilogue{
+        display:none;
     }
 }
 
