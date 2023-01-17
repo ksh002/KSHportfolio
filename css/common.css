@@ -9,7 +9,8 @@ body {font-family: 'Noto Sans KR', sans-serif;}
 /*header*/
 header {
     width: 100%;
-    height: 80px;
+    /* height: 80px; */
+    padding:18px 0;
     background-color: #f4ede7;
     position: fixed;
     left: 0;
@@ -103,7 +104,7 @@ footer{
     height:150px;
     background-color:#f4ede7;
     display:flex;
-    padding:0 650px;
+    padding:0 500px;
     justify-content: space-between;
     align-items: center;
     position:relative;
