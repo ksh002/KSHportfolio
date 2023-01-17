@@ -6,7 +6,9 @@
     margin:0 auto;
 }
 
-
+header .header_wrap .logo img.namelogo{
+    display:none;
+}
 #about .aboutme {
     width: 100%;
     height: 100vh;
@@ -1008,6 +1010,7 @@
     transform:translateX(-20%);
     opacity:0;
     transition:all 1s;
+    
 }
 #story .newstart .newstartBox .mystory_left .mystoryBox.motion{
     opacity:1;
@@ -1322,6 +1325,7 @@
         max-width:944px;
         margin:0 auto;
     }
+
     header .logo img{
         width:131px;
     }
@@ -1961,17 +1965,30 @@
         width:100%;
         max-width:728px;
     }
+    header{
+        padding:20px 0;
+    }
     header .container{
         width:100%;
-        max-width:728px;
+        max-width:548px;
         margin:0 auto;
     }
     header .header_wrap{
-        justify-content: inherit;
+        
     }
-    header .logo img{
-        width:105px;
+    header .logo img.textlogo{
+        /* width:105px; */
+        /* display:none; */
     }
+    header .header_wrap .logo img.textlogo{
+        display:none;
+    }
+    header .header_wrap .logo img.namelogo{
+        display:block;
+        height:40px;
+        width:50px;
+    }
+
     header .gnb{
         position:absolute;
         left:50%;
@@ -2030,6 +2047,8 @@
         display:none;
     }
     #about .aboutme .aboutmeBox{
+        width:548px;
+        margin:0 auto;
         height:570px;
         flex-direction: column;
         position:relative;
@@ -2519,6 +2538,11 @@
         font-weight:bold;
         color:#544b43;
         margin-bottom:30px;
+        opacity: 0;
+        transition:all 1s;
+    }
+    #story .mobile_story .container .MBmystoryBox strong.motion{
+        opacity:1;
     }
     #story .mobile_story .container .MBmystoryBox div.picture1{
         width:100%;
@@ -2527,16 +2551,29 @@
         margin:0 auto;
         background-image: url(../img/picture3.jpg);
         background-size:cover;
+        transform:translateX(-20%);
+        opacity:0;
+        transition:all 1s;
+    }
+    #story .mobile_story .container .MBmystoryBox div.picture1.motion{
+        opacity:1;
+        transform:translateX(0);
     }
     #story .mobile_story .container .MBmystoryBox .mystoryBox{
         transform:rotate(90deg);
         position:absolute;
         right:80px;
         top:200px;
+        opacity:0;
+        transition:all 1s;
+    }
+    #story .mobile_story .container .MBmystoryBox .mystoryBox.motion{
+        opacity:1;
     }
     #story .mobile_story .container .MBmystoryBox .mystoryBox h2{
         font-size:35px;
         color:#544b43;
+        
     }
     
     #story .mobile_story .container .MBmystoryBox .mystoryBox span{
@@ -2554,6 +2591,11 @@
         font-size:18px;
         line-height:30px;
         margin-bottom:100px;
+        opacity: 0;
+        transition:all 1s;
+    }
+    #story .mobile_story .container .MBmystoryBox p.motion{
+        opacity:1;
     }
     #story .mobile_story .container .MBmystoryBox div.picture2{
         width:100%;
@@ -2563,6 +2605,11 @@
         background-size:cover;
         margin:0 auto;
         box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
+        opacity:0;
+        transition:all 1s;
+    }
+    #story .mobile_story .container .MBmystoryBox div.picture2.motion{
+        opacity:1;
     }
     #story .mobile_story .bg_bar3{
         width:100%;
@@ -2607,6 +2654,11 @@
         margin-top:35px;
         margin-bottom:40px;
         box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
+        opacity:1;
+        transition:all 1s;
+    }
+    #story .mobile_story div.picture3.motion{
+        opacity:0;
     }
     #story .mobile_story .endTextBox{
         text-align:center;
@@ -2614,11 +2666,207 @@
     #story .mobile_story .endTextBox p{
         font-size:18px;
         line-height:35px;
+        opacity:0;
+        transition:all 1s;
     }
+    #story .textaniBox{
+        text-align:center;
+        padding-top:20px;
+    }
+    #story .mobile_story .endTextBox p.motion{
+        opacity:1;
+    }
+    #story p.text_ani{
+        font-size:35px;
+        font-weight:bold;
+        color: #544b43;
+        position:relative;
+        display:inline-block;
+    }
+    #story p.text_ani::after{
+        content:"";
+        display:block;
+        position:absolute;
+        top:0;
+        right:-10px;
+        width:3px;
+        height:100%;
+        background-color:#544b43;
+    }
+    #story p.active::after{
+        display:none;
+    }
+    
+    
     #story .newstart,
     #story .realization,
     #story .epilogue{
         display:none;
+    }
+
+}
+
+@media all and (max-width:1770px){
+    #about .aboutme .aboutme_center{
+        width:421px;
+        height:447px;
+    }
+    #about .aboutme .right_box .aboutBox h2{
+        font-size:50px;
+    }
+    #about .aboutme .right_box img{
+        width:200px;
+        height:101px;
+        right:150px;
+    }
+    #about .aboutme .right_box .aboutBox{
+        right:150px;
+    }
+    #about .aboutme .left_box p.text_ani{
+        font-size:30px;
+    }
+    #about .aboutme .left_box span{
+        font-size:25px;
+    }
+    #about .aboutme .left_box span::before{
+        height:5px;
+    }
+    #about .aboutme .left_box > p.animate{
+        font-size:20px;
+    }
+    #about .whoishe .whoishe_left h4, #about .Tb_whoishe h4, #about .Mb_whoishe h4{
+        font-size:30px;
+    }
+    #about .whoishe .whoishe_left .profile h4::before, #about .Tb_whoishe .whoishe_left h4::before, #about .Mb_whoishe h4::before{
+        height:6px;
+    }
+    #about .whoishe .whoishe_left ul li span, #about .Tb_whoishe ul li span, #about .Mb_whoishe ul li span{
+        font-size:16px;
+    }
+    #about .whoishe .whoishe_center{
+        width:414px;
+        height:517px;
+        background-size:cover;
+    }
+    #about .whoishe .whoishe_right h3{
+        font-size:25px;
+    }
+    #about .whoishe .whoishe_right .processBox{
+        width:425px;
+        height:83px;
+    }
+    #about .whoishe .whoishe_right .processBox ul li img{
+        width:40px;
+        height:40px;
+    }
+    #about .whoishe .whoishe_right .processBox ul li span{
+        font-size:12px;
+    }
+    #about .whoishe .whoishe_right .skillBox{
+        width:425px;
+        height:250px;
+    }
+    #about .whoishe .whoishe_right .border{
+        margin-top:25px;
+    }
+    #about .whoishe .whoishe_right .skill_left ul li i{
+        font-size:16px;
+    }
+    #about .whoishe .whoishe_right .skill_left ul li span{
+        font-size:14px;
+    }
+    #about .whoishe .whoishe_right .skill_left ul li{
+        padding-right:30px;
+    }
+    #about .whoishe .whoishe_right .skill_right .rightBox span{
+        font-size:13px;
+    }
+    #about .whoishe .whoishe_right .skill_right .rightBox .skillImg img{
+        width:50px;
+        height:50px;
+    }
+    #about .whoishe .whoishe_right .skill_right .rightBox p{
+        font-size:12px;
+    }
+
+    #web .renewal .wdLeft_box > div ul li{
+        font-size:25px;
+    }
+    #web .renewal .wdLeft_box h3{
+        font-size:30px;
+    }
+    #web .renewal .wdLeft_box > div img{
+        width:220px;
+        height:111px;
+    }
+    #design .dsLeft_container img{
+        width:100%;
+        max-width:504px;
+    }
+
+    #design .dsRight_container .design_info{
+        transform:translateX(-10%);
+    }
+    #design .wdLeft_box h3{
+        font-size:30px;
+    }
+    #design .wdLeft_box img{
+        width:220px;
+    }
+    #story .newstart .newstartBox .mystory_left strong{
+        font-size:35px;
+    }
+    #story .newstart .newstartBox .mystory_left .mystoryBox h2{
+        font-size:50px;
+    }
+    #story .newstart .newstartBox .mystory_center{
+        width:431px;
+        height:477px;
+    }
+    #story .newstart .newstartBox .mystory_right span, #story .realization .realizationBox .realization_left span, #story .mobile_story .container .MBmystoryBox .newstartBox span{
+        font-size:25px;
+    }
+    #story .newstart .newstartBox .mystory_right p, #story .realization .realizationBox .realization_left p{
+        font-size:20px;
+    }
+    #story .newstart .newstartBox .mystory_right img{
+        width:200px;
+        height:101px;
+    }
+    #story .epilogue .ep_title h1{
+        font-size:50px;
+        margin-top:15px;
+    }
+    #story .epilogue .title_bg{
+        height:100px;
+    }
+    #story .epilogue .right_box p.endText{
+        font-size:20px;
+    }
+    #story .epilogue .right_box p.text_ani{
+        font-size:40px;
+    }
+    #story .epilogue .left_box > div{
+        width:422px;
+        height:437px;
+    }
+    #story .epilogue{
+        /* height:630px; */
+    }
+    
+    /* #web .renewal .wdLeft_box > div ul{
+        padding-right:40px;
+    } */
+    
+}
+
+@media all and (max-width:1525px){
+
+}
+
+@media all and (max-width:1610px){
+    #web .renewal .wdLeft_box > div ul li{
+        font-size:18px;
     }
 }
 
