@@ -209,6 +209,7 @@ header .header_wrap .logo img.namelogo{
     box-shadow:0 0 20px 10px rgba(0,0,0,0.15);
     display:flex;
     justify-content: space-between;
+    overflow:hidden;
 }
 
 #about .whoishe .whoishe_left{
@@ -613,7 +614,7 @@ header .header_wrap .logo img.namelogo{
     margin-bottom:240px;
 }
 #web .renewal .wdRight_box ul{
-    padding:8px 30px 0;
+    padding:0 30px;
 }
 #web .renewal .wdRight_box ul li,
 #design .design_info ul li{
@@ -629,10 +630,10 @@ header .header_wrap .logo img.namelogo{
     font-size:12px;
 }
 #web .site_link{
-    position:absolute;
-    bottom:6%;
-    left:50%;
-    transform:translateX(-50%);
+    position:relative;
+    /*bottom:6%;*/
+    /*left:50%;*/
+    /*transform:translateX(-50%);*/
 }
 .site_link{
     text-align:center;
@@ -716,12 +717,13 @@ header .header_wrap .logo img.namelogo{
 #web .renewal .wdRight_box .renewal_info{
     width:100%;
     max-width:322px;
-    height:100%;
-    max-height:318px;
+    /*height:100%;*/
+    /*max-height:318px;*/
     background-color:rgba(255,255,255,0.5);
     border-radius:15px;
     margin:0 40px 60px 100px;
     position:relative;
+    padding:20px 0;
 }
 #web .renewal .wdRight_box img{
     width:457px;
@@ -1313,6 +1315,249 @@ header .header_wrap .logo img.namelogo{
 /* story end */
 
 
+
+@media all and (max-width:1770px){
+    #about .aboutme .aboutme_center{
+        width:421px;
+        height:447px;
+    }
+    #about .aboutme .right_box .aboutBox h2{
+        font-size:50px;
+    }
+    #about .aboutme .right_box img{
+        width:200px;
+        height:101px;
+        right:150px;
+    }
+    #about .aboutme .right_box .aboutBox{
+        right:150px;
+    }
+    #about .aboutme .left_box p.text_ani{
+        font-size:30px;
+    }
+    #about .aboutme .left_box span{
+        font-size:25px;
+    }
+    #about .aboutme .left_box span::before{
+        height:5px;
+    }
+    #about .aboutme .left_box > p.animate{
+        font-size:20px;
+    }
+    #about .whoishe .whoishe_left h4, #about .Tb_whoishe h4, #about .Mb_whoishe h4{
+        font-size:30px;
+    }
+    #about .whoishe .whoishe_left .profile h4::before, #about .Tb_whoishe .whoishe_left h4::before, #about .Mb_whoishe h4::before{
+        height:6px;
+    }
+    #about .whoishe .whoishe_left ul li span, #about .Tb_whoishe ul li span, #about .Mb_whoishe ul li span{
+        font-size:16px;
+    }
+    #about .whoishe .whoishe_center{
+        width:414px;
+        height:517px;
+        background-size:cover;
+    }
+    #about .whoishe .whoishe_right h3{
+        font-size:25px;
+    }
+    #about .whoishe .whoishe_right .processBox{
+        width:425px;
+        height:83px;
+    }
+    #about .whoishe .whoishe_right .processBox ul li img{
+        width:40px;
+        height:40px;
+    }
+    #about .whoishe .whoishe_right .processBox ul li span{
+        font-size:12px;
+    }
+    #about .whoishe .whoishe_right .skillBox{
+        width:425px;
+        height:250px;
+    }
+    #about .whoishe .whoishe_right .border{
+        margin-top:25px;
+    }
+    #about .whoishe .whoishe_right .skill_left ul li i{
+        font-size:16px;
+    }
+    #about .whoishe .whoishe_right .skill_left ul li span{
+        font-size:14px;
+    }
+    #about .whoishe .whoishe_right .skill_left ul li{
+        padding-right:30px;
+    }
+    #about .whoishe .whoishe_right .skill_right .rightBox span{
+        font-size:13px;
+    }
+    #about .whoishe .whoishe_right .skill_right .rightBox .skillImg img{
+        width:50px;
+        height:50px;
+    }
+    #about .whoishe .whoishe_right .skill_right .rightBox p{
+        font-size:12px;
+    }
+
+    #web .renewal .wdLeft_box > div ul li{
+        font-size:25px;
+    }
+    #web .renewal .wdLeft_box h3{
+        font-size:30px;
+    }
+    #web .renewal .wdLeft_box > div img{
+        width:220px;
+        height:111px;
+    }
+    #design .dsLeft_container img{
+        width:100%;
+        max-width:504px;
+    }
+
+    #design .dsRight_container .design_info{
+        transform:translateX(-10%);
+    }
+    #design .wdLeft_box h3{
+        font-size:30px;
+    }
+    #design .wdLeft_box img{
+        width:220px;
+    }
+    #story .newstart .newstartBox .mystory_left strong{
+        font-size:35px;
+    }
+    #story .newstart .newstartBox .mystory_left .mystoryBox h2{
+        font-size:50px;
+    }
+    #story .newstart .newstartBox .mystory_center{
+        width:431px;
+        height:477px;
+    }
+    #story .newstart .newstartBox .mystory_right span, #story .realization .realizationBox .realization_left span, #story .mobile_story .container .MBmystoryBox .newstartBox span{
+        font-size:25px;
+    }
+    #story .newstart .newstartBox .mystory_right p, #story .realization .realizationBox .realization_left p{
+        font-size:20px;
+    }
+    #story .newstart .newstartBox .mystory_right img{
+        width:200px;
+        height:101px;
+    }
+    #story .epilogue .ep_title h1{
+        font-size:50px;
+        margin-top:15px;
+    }
+    #story .epilogue .title_bg{
+        height:100px;
+    }
+    #story .epilogue .right_box p.endText{
+        font-size:20px;
+    }
+    #story .epilogue .right_box p.text_ani{
+        font-size:40px;
+    }
+    #story .epilogue .left_box > div{
+        width:422px;
+        height:437px;
+    }
+    #story .epilogue{
+        /* height:630px; */
+    }
+    
+    /* #web .renewal .wdLeft_box > div ul{
+        padding-right:40px;
+    } */
+    
+}
+
+@media all and (min-width:1025px) and (max-width:1525px){
+    
+    #design .dsLeft_container img{
+        width:100%;
+        max-width:420px;
+    }
+    #design .dsRight_container .design_info{
+        /* transform:translateX(-30%); */
+    }
+    #web .renewal .wdRight_box h2{
+        font-size:50px;
+    }
+    #web .renewal .wdRight_box img{
+        width:407px;
+        height:344px;
+    }
+    #web .renewal .wdRight_box .renewal_info{
+        margin-left:20px;
+    }
+    #web .renewal .wdLeft_box > div{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    #web .renewal .wdLeft_box > div ul{
+        padding:0;
+        font-size:23px;
+    }
+    #web .renewal .wdLeft_box > div img{
+        width:180px;
+        height:91px;
+    }
+    #web .renewal .wdLeft_box > div .ptImg_box{
+        padding-top:90px;
+    }
+}
+
+@media all and (max-width:1610px){
+    #web .renewal .wdLeft_box > div ul li{
+        /* font-size:18px; */
+    }
+}
+@media all and (max-width:1310px){
+    #about .aboutme .right_box .aboutBox{
+        right:75px;
+    }
+    #story .newstart .newstartBox .mystory_center{
+        width:381px;
+        height:427px;
+        left:15%;
+    }
+    #story .newstart .newstartBox .mystory_left .mystoryBox h2{
+        font-size:35px;
+    }
+    #story .newstart .newstartBox .mystory_left .mystoryBox{
+        left:-2%;
+    }
+    #story .realization .realizationBox .realization_right > div{
+        width:347px;
+        height:410px;
+        background-size:cover;
+    }
+    #story .epilogue .left_box > div{
+        width:362px;
+        height:387px;
+    }
+    #design .dsLeft_container img{
+        
+    }
+    #about .aboutme .right_box img{
+        right:75px;
+    }
+    #about .aboutme .aboutme_center{
+        max-width:341px;
+        height:397px;
+        background-size:cover;
+    }
+    #about .whoishe .whoishe_center{
+        width:324px;
+        height:427px;
+    }
+    #about .whoishe .whoishe_left{
+        /* padding-right:160px; */
+    }
+    #about .whoishe .whoishe_right{
+        /* padding-left:360px; */
+    }
+}
+
 /* Tablet Device */
 @media all and (min-width:769px) and (max-width:1024px){
     .container{
@@ -1425,7 +1670,7 @@ header .header_wrap .logo img.namelogo{
     }
     #about .whoishe .whoisheBox .whoishe_left{
         position:relative;
-        width:60%;
+        width:65%;
     }
     #about .whoishe .whoisheBox .whoishe_left .profile,
     #about .whoishe .whoisheBox .whoishe_left .license{
@@ -1521,7 +1766,7 @@ header .header_wrap .logo img.namelogo{
     #about .whoishe .whoisheBox .whoishe_right .skill .skillBox .border{
         height:144px;
         position:absolute;
-        top:-20px;
+        top:0;
         left:130px;
     }
     #about .whoishe .whoisheBox .whoishe_right .skill .skillBox .border .line{
@@ -1719,7 +1964,8 @@ header .header_wrap .logo img.namelogo{
         height:17px;
     }
     #web .renewal .site_link{
-        bottom:20px;
+        bottom:-70%;
+        left:-40%;
     }
     #web .renewal .site_link p{
         font-size:12px;
@@ -1771,6 +2017,7 @@ header .header_wrap .logo img.namelogo{
     }
     .btnBox{
         width:93px;
+        
     }
     .btnBox b{
         font-size: 12px;
@@ -1847,7 +2094,9 @@ header .header_wrap .logo img.namelogo{
         display:inline-block;
         margin-bottom:300px;
         margin-left:80px;
+        display:none;
     }
+    
 
     #story .newstart .newstartBox .mystory_center{
         /* display:none; */
@@ -1958,6 +2207,7 @@ header .header_wrap .logo img.namelogo{
         display:none;
     }
 }
+
 
 /* Mobile Device */
 @media all and (max-width:768px){
@@ -2091,7 +2341,9 @@ header .header_wrap .logo img.namelogo{
         left:50%;
         transform:translateX(-50%);
     }
-
+    #about .whoishe .whoishe_right .processBox{
+        height:174px;
+    }
     #about .whoishe .left_bg{
         width:100%;
         max-width:728px;
@@ -2388,6 +2640,12 @@ header .header_wrap .logo img.namelogo{
         font-size:10px;
         font-weight:normal;
     }
+    #web .site_link{
+        position:absolute;
+        left:50%;
+        transform:translateX(-50%);
+        bottom:8%;
+    }
     #web .mobile_renewal .container .MBbg .renewal1_bg .Tb_renewal_info .site_link .btnBox p{
         transform:skew(20deg);
     }
@@ -2571,8 +2829,7 @@ header .header_wrap .logo img.namelogo{
         opacity:1;
     }
     #story .mobile_story .container .MBmystoryBox .mystoryBox h2{
-        font-size:35px;
-        color:#544b43;
+        display:none;
         
     }
     
@@ -2705,169 +2962,3 @@ header .header_wrap .logo img.namelogo{
     }
 
 }
-
-@media all and (max-width:1770px){
-    #about .aboutme .aboutme_center{
-        width:421px;
-        height:447px;
-    }
-    #about .aboutme .right_box .aboutBox h2{
-        font-size:50px;
-    }
-    #about .aboutme .right_box img{
-        width:200px;
-        height:101px;
-        right:150px;
-    }
-    #about .aboutme .right_box .aboutBox{
-        right:150px;
-    }
-    #about .aboutme .left_box p.text_ani{
-        font-size:30px;
-    }
-    #about .aboutme .left_box span{
-        font-size:25px;
-    }
-    #about .aboutme .left_box span::before{
-        height:5px;
-    }
-    #about .aboutme .left_box > p.animate{
-        font-size:20px;
-    }
-    #about .whoishe .whoishe_left h4, #about .Tb_whoishe h4, #about .Mb_whoishe h4{
-        font-size:30px;
-    }
-    #about .whoishe .whoishe_left .profile h4::before, #about .Tb_whoishe .whoishe_left h4::before, #about .Mb_whoishe h4::before{
-        height:6px;
-    }
-    #about .whoishe .whoishe_left ul li span, #about .Tb_whoishe ul li span, #about .Mb_whoishe ul li span{
-        font-size:16px;
-    }
-    #about .whoishe .whoishe_center{
-        width:414px;
-        height:517px;
-        background-size:cover;
-    }
-    #about .whoishe .whoishe_right h3{
-        font-size:25px;
-    }
-    #about .whoishe .whoishe_right .processBox{
-        width:425px;
-        height:83px;
-    }
-    #about .whoishe .whoishe_right .processBox ul li img{
-        width:40px;
-        height:40px;
-    }
-    #about .whoishe .whoishe_right .processBox ul li span{
-        font-size:12px;
-    }
-    #about .whoishe .whoishe_right .skillBox{
-        width:425px;
-        height:250px;
-    }
-    #about .whoishe .whoishe_right .border{
-        margin-top:25px;
-    }
-    #about .whoishe .whoishe_right .skill_left ul li i{
-        font-size:16px;
-    }
-    #about .whoishe .whoishe_right .skill_left ul li span{
-        font-size:14px;
-    }
-    #about .whoishe .whoishe_right .skill_left ul li{
-        padding-right:30px;
-    }
-    #about .whoishe .whoishe_right .skill_right .rightBox span{
-        font-size:13px;
-    }
-    #about .whoishe .whoishe_right .skill_right .rightBox .skillImg img{
-        width:50px;
-        height:50px;
-    }
-    #about .whoishe .whoishe_right .skill_right .rightBox p{
-        font-size:12px;
-    }
-
-    #web .renewal .wdLeft_box > div ul li{
-        font-size:25px;
-    }
-    #web .renewal .wdLeft_box h3{
-        font-size:30px;
-    }
-    #web .renewal .wdLeft_box > div img{
-        width:220px;
-        height:111px;
-    }
-    #design .dsLeft_container img{
-        width:100%;
-        max-width:504px;
-    }
-
-    #design .dsRight_container .design_info{
-        transform:translateX(-10%);
-    }
-    #design .wdLeft_box h3{
-        font-size:30px;
-    }
-    #design .wdLeft_box img{
-        width:220px;
-    }
-    #story .newstart .newstartBox .mystory_left strong{
-        font-size:35px;
-    }
-    #story .newstart .newstartBox .mystory_left .mystoryBox h2{
-        font-size:50px;
-    }
-    #story .newstart .newstartBox .mystory_center{
-        width:431px;
-        height:477px;
-    }
-    #story .newstart .newstartBox .mystory_right span, #story .realization .realizationBox .realization_left span, #story .mobile_story .container .MBmystoryBox .newstartBox span{
-        font-size:25px;
-    }
-    #story .newstart .newstartBox .mystory_right p, #story .realization .realizationBox .realization_left p{
-        font-size:20px;
-    }
-    #story .newstart .newstartBox .mystory_right img{
-        width:200px;
-        height:101px;
-    }
-    #story .epilogue .ep_title h1{
-        font-size:50px;
-        margin-top:15px;
-    }
-    #story .epilogue .title_bg{
-        height:100px;
-    }
-    #story .epilogue .right_box p.endText{
-        font-size:20px;
-    }
-    #story .epilogue .right_box p.text_ani{
-        font-size:40px;
-    }
-    #story .epilogue .left_box > div{
-        width:422px;
-        height:437px;
-    }
-    #story .epilogue{
-        /* height:630px; */
-    }
-    
-    /* #web .renewal .wdLeft_box > div ul{
-        padding-right:40px;
-    } */
-    
-}
-
-@media all and (max-width:1525px){
-
-}
-
-@media all and (max-width:1610px){
-    #web .renewal .wdLeft_box > div ul li{
-        font-size:18px;
-    }
-}
-
-
