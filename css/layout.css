@@ -842,6 +842,7 @@ header .header_wrap .logo img.namelogo{
     /* height:100%; */
     /* max-height:359px; */
     margin-left: 12%;
+    /* margin:0 auto; */
 }
 #design .dsRight_container{
     width:35%;
@@ -932,6 +933,7 @@ header .header_wrap .logo img.namelogo{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    
 }
 .swiper-button-next{
     position:absolute;
@@ -1080,6 +1082,7 @@ header .header_wrap .logo img.namelogo{
     margin-bottom:95px;
     transition:all 1s;
     opacity:0;
+    padding-right:40px;
 }
 #story .realization .realizationBox .realization_left p:last-child{
     display:none;
@@ -1266,6 +1269,7 @@ header .header_wrap .logo img.namelogo{
     line-height:45px;
     opacity:0;
     transition:all 1s;
+    padding-right:40px;
 }
 
 
@@ -1327,10 +1331,11 @@ header .header_wrap .logo img.namelogo{
     #about .aboutme .right_box img{
         width:200px;
         height:101px;
-        right:150px;
+        right:10%;
     }
     #about .aboutme .right_box .aboutBox{
         right:150px;
+        right:10%;
     }
     #about .aboutme .left_box p.text_ani{
         font-size:30px;
@@ -1476,6 +1481,13 @@ header .header_wrap .logo img.namelogo{
         width:100%;
         max-width:420px;
     }
+    #design .dsRight_container > span{
+        font-size:22px;
+        max-width:153px;
+    }
+    #design .dsRight_container > span::before{
+        height:5px;
+    }
     #design .dsRight_container .design_info{
         /* transform:translateX(-30%); */
     }
@@ -1511,9 +1523,29 @@ header .header_wrap .logo img.namelogo{
         /* font-size:18px; */
     }
 }
-@media all and (max-width:1310px){
+@media all and (min-width:1025px) and (max-width:1310px){
     #about .aboutme .right_box .aboutBox{
         right:75px;
+    }
+    #design .dsRight_container .design_info{
+        width:250px;
+        height:auto;
+        padding-bottom:30px;
+    }
+    #design .dsLeft_container img{
+        width:330px;
+    }
+    .btnBox{
+        width:80px;
+        height:24px;
+    }
+    .btnBox b{
+        width:80px;
+        font-size:12px;
+    }
+    #design .designRight_box .design_info .logoImg_container img{
+        width:60px;
+        height:60px;
     }
     #story .newstart .newstartBox .mystory_center{
         width:381px;
@@ -1686,6 +1718,7 @@ header .header_wrap .logo img.namelogo{
         transform:translate(-50%,-50%);
         /* justify-content: center; */
     }
+    
     #about .whoishe .whoisheBox .whoishe_left .process h3{
         font-size:20px;
         color:#544b43;
@@ -1889,7 +1922,7 @@ header .header_wrap .logo img.namelogo{
 
 
     #web .renewal .wdRight_box{
-        padding-top:80px;
+        padding-top:75px;
         padding-right:35px;
         padding-bottom:0;
         height:100%;
@@ -1988,22 +2021,34 @@ header .header_wrap .logo img.namelogo{
         height:293px;
         position:absolute;
         top:12%;
-        margin-left:13%;
+        left:50%;
+        transform:translateX(-50%);
+        margin:0 auto;
+        /* margin-left:13%; */
+    }
+    #design .swiper-slide{
+        flex-direction:column;
     }
     #design .dsRight_container > span{
         position:absolute;
         z-index:1;
         font-size:25px;
-        top:5%;
-        left:25%;
-        
+        left:50%;
+        transform:translateX(-50%);
+        /* top:5%; */
+        /* left:25%; */
+        /* margin:0 auto; */
+        margin-left:0;
+        text-align:center;
     }
+    
     #design .dsRight_container .design_info{
         width:408px;
         height:289px;
         position:absolute;
         top:50%;
-        left:17%;
+        left:50%;
+        transform:translateX(-50%);
         padding-top:5px;
     }
     #design .dsRight_container .design_info .designTitle{
@@ -2188,6 +2233,7 @@ header .header_wrap .logo img.namelogo{
         height:auto;
         text-align:center;
     }
+    
     #story .epilogue .right_box p.endText{
         font-size:18px;
         line-height:30px;
@@ -2216,7 +2262,7 @@ header .header_wrap .logo img.namelogo{
         max-width:728px;
     }
     header{
-        padding:20px 0;
+        padding:30px 0;
     }
     header .container{
         width:100%;
@@ -2229,6 +2275,9 @@ header .header_wrap .logo img.namelogo{
     header .logo img.textlogo{
         /* width:105px; */
         /* display:none; */
+    }
+    header .logo{
+        display:none;
     }
     header .header_wrap .logo img.textlogo{
         display:none;
@@ -2347,13 +2396,14 @@ header .header_wrap .logo img.namelogo{
     #about .whoishe .left_bg{
         width:100%;
         max-width:728px;
-        height:371px;
+        height:311px;
         left:50%;
         transform:translateX(-50%);
         
     }
     #about .whoishe .container{
         padding-top:40px;
+        display:none;
     }
     #about .whoishe .whoisheBox{
         width:100%;
@@ -2361,6 +2411,7 @@ header .header_wrap .logo img.namelogo{
         height:662px;
         margin:0 auto;
         box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
+        
     }
     #about .whoishe .whoisheBox .whoishe_left{
         display:none;
@@ -2459,6 +2510,9 @@ header .header_wrap .logo img.namelogo{
     #about .whoishe .whoishe_right .skill_right .rightBox{
         padding:0 30px;
     }
+    #about .whoishe .whoishe_center{
+        display:none;
+    }
     #about .whoishe .whoishe_center.motion{
         width:100%;
         max-width:330px;
@@ -2483,10 +2537,11 @@ header .header_wrap .logo img.namelogo{
         left:50%;
         transform:translateX(-50%);
         z-index:-1;
+        display:none;
     }
     #about .Mb_whoishe .whoisheBox{
         width:100%;
-        max-width:580px;
+        max-width:548px;
         height:548px;
         box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
         margin:0 auto;
@@ -2504,7 +2559,7 @@ header .header_wrap .logo img.namelogo{
     }
     #about .Mb_whoishe .whoisheBox .whoishe_top{
         text-align:center;
-        padding-top:60px;
+        padding-top:25px;
         margin-bottom:30px;
         transition:all 1s;
         opacity:0;
@@ -2516,6 +2571,7 @@ header .header_wrap .logo img.namelogo{
         text-align:center;
         transition:all 1s;
         opacity:0;
+        padding-top:20px;
     }
     #about .Mb_whoishe .whoisheBox .whoishe_bottom.motion{
         opacity:1;
@@ -2534,7 +2590,7 @@ header .header_wrap .logo img.namelogo{
         max-width:768px;
         /* height:2040px; */
         /* background-color:#bfa58e; */
-        padding-top:80px;
+        padding-top:60px;
         /* position:relative; */
     }
     #web .mobile_renewal .MBrenewal,
@@ -2585,26 +2641,30 @@ header .header_wrap .logo img.namelogo{
     #web .mobile_renewal .container{
         background-color:#f4ede7;
         box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
-        width:630px;
+        width:100%;
+        max-width:630px;
         margin:0 auto;
         height:544px;
         position:relative;
+        overflow:hidden;
     }
     #web .mobile_renewal .container .MBbg{
         width:100%;
         max-width:568px;
         height:474px;
-        margin-left:31px;
+        margin:0 auto;
     }
     #web .mobile_renewal .container .MBbg .renewal1_bg{
         background-image: url(../img/lookpin_bg.jpg);
         background-size:cover;
         width:100%;
+        max-width:568px;
         height:100%;
         display:flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        position:relative;
     }
     #web .mobile_renewal .container .MBbg .renewal1_bg.yeogi{
         background-image: url(../img/yeogi_bg.jpg);
@@ -2616,6 +2676,10 @@ header .header_wrap .logo img.namelogo{
     #web .mobile_renewal .container .MBbg .renewal1_bg img{
         width:253px;
         height:211px;
+        position:absolute;
+        top:40px;
+        left:50%;
+        transform:translateX(-50%);
     }
     #web .mobile_renewal .container .MBbg .renewal1_bg .Tb_renewal_info{
         width:444px;
@@ -2623,6 +2687,11 @@ header .header_wrap .logo img.namelogo{
         background-color:rgba(255,255,255,0.5);
         border-radius: 15px;
         display:flex;
+        position:absolute;
+        top:260px;
+        left:50%;
+        transform:translateX(-50%);
+
         padding-top:5px;
         padding-left:15px;
     }
@@ -2658,6 +2727,7 @@ header .header_wrap .logo img.namelogo{
         box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
         text-align:center;
         padding-top:20px;
+        
     }
     #web .mobile_renewal .container .title_container span{
         font-size:20px;
@@ -2668,18 +2738,24 @@ header .header_wrap .logo img.namelogo{
     #design .renewal{
         display:inherit;
         height:750px;
+        overflow:hidden;
+        margin:0 auto;
     }
     #design .wdLeft_bg{
         display:none;
     }
     #design .wdRight_box{
+        width:100%;
+        max-width:630px;
         padding:0;
         height:100%;
+        margin:0 auto;
     }
     #design .wdRight_box .designRight_box{
         width:630px;
-        margin-left:61px;
+        margin:0 auto;
     }
+    
     #design .dsRight_container > span{
         font-size:20px;
         width:auto;
@@ -2688,10 +2764,15 @@ header .header_wrap .logo img.namelogo{
         top:40px;
         left:50%;
         transform:translateX(-50%);
+        overflow:hidden;
     }
+    
     #design .dsRight_container > span::before{
         height:6px;
         width:107%;
+    }
+    #design .dsLeft_container{
+        margin:0 auto;
     }
     #design .dsLeft_container img{
         width:100%;
@@ -2700,11 +2781,14 @@ header .header_wrap .logo img.namelogo{
         position:absolute;
         top:94px;
         
+        
     }
     .swiper-button-next,
     .swiper-button-prev{
         top:31%;
+        display:none;
     }
+    
     #design .dsRight_container .design_info{
         width:278px;
         height:300px;
@@ -2746,18 +2830,23 @@ header .header_wrap .logo img.namelogo{
         height:100px;
         width:100%;
         background-color:#bfa58e;
-        padding:0 60px 40px 60px;
+        /* padding:0 60px 40px 60px; */
+        /* padding:0 auto; */
     }
     #design .bottom_bar > div{
         width:100%;
+        max-width:630px;
+        margin:0 auto;
         height:100%;
         box-shadow:0 0 10px 5px rgba(0,0,0,0.15);
     }
 
     #story .mobile_story{
         display:block;
-        height:2050px;
+        /* height:2050px; */
+        /* padding:0 50px; */
         position:relative;
+        margin-top:-20px;
     }
     #story .mobile_story .bg_bar{
         width:100%;
@@ -2773,7 +2862,7 @@ header .header_wrap .logo img.namelogo{
         height:197px;
         background-color:#bfa58e;
         position:absolute;
-        top:35%;
+        top:700px;
         z-index:-1;
     }
     #story .mobile_story .container{
@@ -2845,11 +2934,12 @@ header .header_wrap .logo img.namelogo{
         height:5px;
     }
     #story .mobile_story .container .MBmystoryBox p{
-        font-size:18px;
-        line-height:30px;
+        font-size:14px;
+        line-height:25px;
         margin-bottom:100px;
         opacity: 0;
         transition:all 1s;
+        padding:0 30px;
     }
     #story .mobile_story .container .MBmystoryBox p.motion{
         opacity:1;
@@ -2883,6 +2973,7 @@ header .header_wrap .logo img.namelogo{
     }
     #story .mobile_story .ep_title.end{
         top:1950px;
+        display:none;
     }
     #story .mobile_story .ep_title h1{
         font-size:35px;
@@ -2919,12 +3010,15 @@ header .header_wrap .logo img.namelogo{
     }
     #story .mobile_story .endTextBox{
         text-align:center;
+        margin-top:-20px;
+        margin-bottom:20px;
     }
     #story .mobile_story .endTextBox p{
-        font-size:18px;
-        line-height:35px;
+        font-size:14px;
+        line-height:25px;
         opacity:0;
         transition:all 1s;
+        padding:0 30px;
     }
     #story .textaniBox{
         text-align:center;
