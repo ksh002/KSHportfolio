@@ -2005,6 +2005,9 @@ header .header_wrap .logo img.namelogo{
         bottom:-70%;
         left:-40%;
     }
+    #web .renewal .site_link.sec{
+        left:-27%;
+    }
     #web .renewal .site_link p{
         font-size:12px;
         font-weight:900;
