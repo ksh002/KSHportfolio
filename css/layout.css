@@ -1525,7 +1525,7 @@ header .header_wrap .logo img.namelogo{
 }
 @media all and (min-width:1025px) and (max-width:1310px){
     #about .aboutme .right_box .aboutBox{
-        right:75px;
+        right:0;
     }
     #design .dsRight_container .design_info{
         width:250px;
@@ -1563,6 +1563,10 @@ header .header_wrap .logo img.namelogo{
         height:410px;
         background-size:cover;
     }
+    #about .aboutme .right_box .aboutBox h2{
+        /* margin-bottom:50px; */
+        
+    }
     #story .epilogue .left_box > div{
         width:362px;
         height:387px;
@@ -1572,7 +1576,9 @@ header .header_wrap .logo img.namelogo{
     }
     #about .aboutme .right_box img{
         right:75px;
+        display:none;
     }
+    
     #about .aboutme .aboutme_center{
         max-width:341px;
         height:397px;
@@ -2035,11 +2041,14 @@ header .header_wrap .logo img.namelogo{
         font-size:25px;
         left:50%;
         transform:translateX(-50%);
-        /* top:5%; */
+        top:20px;
         /* left:25%; */
         /* margin:0 auto; */
         margin-left:0;
         text-align:center;
+    }
+    #design .dsRight_container > span::before{
+        left:15px;
     }
     
     #design .dsRight_container .design_info{
@@ -2127,9 +2136,12 @@ header .header_wrap .logo img.namelogo{
         margin-bottom: 60px;
     }
     #story .newstart .newstartBox .mystory_right img{
-        width:179px;
+        width:149px;
+        height:81px;
         margin-left:100px;
+        /* display:none; */
     }
+    
     #story .newstart .newstartBox .mystory_left .mystoryBox{
 
     }
@@ -2149,7 +2161,7 @@ header .header_wrap .logo img.namelogo{
         max-width:331px;
         height:363px;
         background-size:cover;
-        left:110px;
+        left:40px;
     }
 
     #story .realization{
