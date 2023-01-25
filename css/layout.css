@@ -854,12 +854,15 @@ header .header_wrap .logo img.namelogo{
     /* align-items: center; */
     justify-content: center;
     /* background:red; */
+    align-items: center;
+    margin-right:45px;
 }
 #design .dsRight_container > span{
     width:100%;
     max-width:212px;
     display:block;
-    margin-left:15%;
+    /* margin-left:10%; */
+    margin:0 auto;
     font-size:30px;
     font-weight:bold;
     color:#544b43;
@@ -1420,7 +1423,10 @@ header .header_wrap .logo img.namelogo{
     }
 
     #design .dsRight_container .design_info{
-        transform:translateX(-10%);
+        /* transform:translateX(-10%); */
+    }
+    #design .dsRight_container{
+        margin-right:70px;
     }
     #design .wdLeft_box h3{
         font-size:30px;
@@ -2089,7 +2095,7 @@ header .header_wrap .logo img.namelogo{
         font-size:12px;
     }
     #design .dsRight_container .design_info .logoImg_container img{
-        width:87px;
+        width:60px;
     }
     #design .dsRight_container > span::before{
         width:84%;
